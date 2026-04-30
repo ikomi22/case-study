@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Context — CS·01</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="top-nav" aria-label="Document navigation">
+  <div class="top-nav-inner">
+    <a href="index.html" class="top-nav-brand">CS·01</a>
+    <div class="top-nav-links">
+      <a href="index.html">Home</a>
+      <a href="context.html">01 · Context</a>
+      <a href="journey.html">02 · Journey</a>
+      <a href="decisions.html">03 · Decisions</a>
+      <a href="outcomes.html">04 · Outcomes</a>
+      <a href="reflection.html">05 · Reflection</a>
+    </div>
+  </div>
+</nav>
+
+<div class="reading-progress" aria-hidden="true">
+  <div class="reading-progress-fill"></div>
+</div>
+
+<div class="document">
+
+<!-- SECTION 01: CONTEXT -->
+<div class="section" id="context">
+  <div class="section-label">
+    <div class="section-num">01</div>
+    <div class="section-title-text">Context</div>
+    <div class="section-subtitle-text">The inheritance · Jan 2025</div>
+  </div>
+
+  <div class="context-layout">
+    <div class="context-narrative">
+      <p>This case study relates to a large acute NHS Trust — one of the UK's largest — serving nearly 20,000 staff across a complex multi-site environment. Learning and compliance aren't optional here. They are regulatory requirements with direct implications for patient safety.</p>
+      <p>When I joined in January 2025, the situation was uncomfortable from day one. The Trust had two systems running simultaneously — a legacy LMS and ESR, the NHS's national electronic staff record system. The legacy LMS had been rushed into production to support an EPR go-live. The people who configured it had already left. What they left behind was broken, poorly trusted, and generating genuine anxiety about the organisation's ability to demonstrate staff compliance.</p>
+      <p>There was no runway. No handover. No documentation that could be trusted. Just a requirements list — and a system that couldn't deliver any of it. That list became the starting point for a structured programme workplan — priorities assigned, owners named, milestones agreed. The vision was mapped before the work began.</p>
+      <div class="pull-quote" style="margin-top: 16px;">
+        <div class="pull-quote-text">I hadn't just inherited a technical problem. I had inherited a <span class="hl">trust problem.</span> And trust, once broken, doesn't respond to configuration changes.</div>
+      </div>
+    </div>
+
+    <div class="system-snapshot">
+      <div class="snapshot-title">System State · On Arrival</div>
+
+      <div class="risk-card">
+        <div class="risk-card-header">
+          <div class="risk-card-title">Process</div>
+          <div class="risk-badge risk-high">Critical</div>
+        </div>
+        <div class="risk-desc">Paper appraisals. Manual ESR entry. No reliable compliance data. Staff not feeling heard.</div>
+      </div>
+
+      <div class="risk-card">
+        <div class="risk-card-header">
+          <div class="risk-card-title">Technology</div>
+          <div class="risk-badge risk-high">Broken</div>
+        </div>
+        <div class="risk-desc">Legacy LMS failed once already — SSO failures, broken completions, misconfigured courses, dirty data. Accounts created for rooms. Names not updating after marriage.</div>
+      </div>
+
+      <div class="risk-card">
+        <div class="risk-card-header">
+          <div class="risk-card-title">Governance</div>
+          <div class="risk-badge risk-med">At Risk</div>
+        </div>
+        <div class="risk-desc">ESR: too many hands, no naming conventions. Search required pasting ampersand strings to find a course. No accountability. Edge cases unresolved.</div>
+      </div>
+
+      <div class="risk-card">
+        <div class="risk-card-header">
+          <div class="risk-card-title">Trust</div>
+          <div class="risk-badge risk-high">Depleted</div>
+        </div>
+        <div class="risk-desc">L&D team at risk of being seen as incompetent. Staff had lost confidence in digital learning tools.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 02: STAKEHOLDER LANDSCAPE -->
+<div class="section section-alt" id="stakeholders">
+  <div class="section-label">
+    <div class="section-num">02</div>
+    <div class="section-title-text">Stakeholder Landscape</div>
+    <div class="section-subtitle-text">Influence matrix</div>
+  </div>
+
+  <div class="stakeholder-matrix">
+    <div class="sh-col sh-supportive">
+      <div class="sh-header">✓ Supportive</div>
+      <div class="sh-item">
+        <div class="sh-role">Head of L&D</div>
+        <div class="sh-note">Understood the scale of the problem. Clear mandate provided. Key decision-making ally throughout.</div>
+      </div>
+      <div class="sh-item">
+        <div class="sh-role">Assistant Head of L&D (Line Manager)</div>
+        <div class="sh-note">Direct support. Flagged community teams early. Gave strategic direction on roadshow and rollout.</div>
+      </div>
+    </div>
+    <div class="sh-col sh-anxious">
+      <div class="sh-header">⚠ Anxious</div>
+      <div class="sh-item">
+        <div class="sh-role">ICT Team</div>
+        <div class="sh-note">Had own pressures and systems to protect. Required patient relationship building before meaningful technical collaboration.</div>
+      </div>
+      <div class="sh-item">
+        <div class="sh-role">Director of Pharmacy</div>
+        <div class="sh-note">Team navigating multiple simultaneous changes. Pushed back on appraisal rollout timing. Convinced through peer evidence, not features.</div>
+      </div>
+    </div>
+    <div class="sh-col sh-obstructive">
+      <div class="sh-header">✗ Friction</div>
+      <div class="sh-item">
+        <div class="sh-role">Information Governance</div>
+        <div class="sh-note">Caution by default — entirely appropriate in NHS context. Late engagement created avoidable delays. Lesson: IG should be a design input, not a sign-off gate.</div>
+      </div>
+      <div class="sh-item">
+        <div class="sh-role">Decentralised Departments</div>
+        <div class="sh-note">Continued creating courses on ESR without awareness of the new LMS. Not malicious — structural. Required communication, not criticism.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<nav class="page-nav" aria-label="Page navigation">
+  <a href="index.html" class="page-nav-link">← Home</a>
+  <span class="page-nav-title">01 · Context</span>
+  <a href="journey.html" class="page-nav-link">Journey →</a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
