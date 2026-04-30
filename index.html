@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detailed Product Case Study — Tsemaye MICHAEL Ikomi</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0D1B2A;
+    --navy-mid: #1B2E45;
+    --blue: #1E6FBF;
+    --blue-light: #3A8FE8;
+    --accent: #2AADDB;
+    --gold: #C9A84C;
+    --white: #FFFFFF;
+    --off-white: #F4F6F9;
+    --gray-light: #E8ECF2;
+    --gray-mid: #8A9BB0;
+    --gray-text: #4A5568;
+    --red: #E53E3E;
+    --green: #2F855A;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  @media print {
+    * {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      color-adjust: exact !important;
+    }
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--off-white);
+    color: var(--navy);
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--white);
+    box-shadow: 0 0 60px rgba(0,0,0,0.08);
+  }
+
+  /* COVER */
+  .cover {
+    background: var(--navy);
+    padding: 60px 60px 50px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(30,111,191,0.25) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -60px; left: 200px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(42,173,219,0.12) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .cover-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+
+  .cover-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+
+  .cover-meta {
+    text-align: right;
+  }
+
+  .cover-meta .name {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--white);
+    letter-spacing: 0.02em;
+  }
+
+  .cover-meta .title {
+    font-size: 11px;
+    color: var(--gray-mid);
+    margin-top: 2px;
+  }
+
+  .cover-meta .ref {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    color: var(--gray-mid);
+    margin-top: 6px;
+    letter-spacing: 0.15em;
+  }
+
+  .cover-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cover-headline .highlight {
+    color: var(--accent);
+    font-style: italic;
+  }
+
+  .cover-subtitle {
+    font-size: 13px;
+    color: var(--gray-mid);
+    max-width: 560px;
+    line-height: 1.6;
+    margin-bottom: 36px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: 1px solid;
+  }
+
+  .tag-filled {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: var(--white);
+  }
+
+  .tag-outline {
+    background: transparent;
+    border-color: rgba(255,255,255,0.2);
+    color: var(--gray-mid);
+  }
+
+  /* METRICS */
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 36px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .metric {
+    padding-right: 30px;
+    border-right: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .metric:last-child { border-right: none; padding-right: 0; padding-left: 30px; }
+  .metric:nth-child(2) { padding: 0 30px; }
+
+  .metric-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .metric-icon { font-size: 14px; }
+
+  .metric-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .metric-desc {
+    font-size: 11px;
+    color: var(--gray-mid);
+    line-height: 1.4;
+  }
+
+  /* BODY */
+  .body-content {
+    padding: 0 60px 60px;
+  }
+
+  /* SECTION HEADER */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 32px 0 20px;
+    border-bottom: 2px solid var(--navy);
+    margin-bottom: 24px;
+  }
+
+  .section-number {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--white);
+    background: var(--navy);
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+  }
+
+  .section-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--navy);
+  }
+
+  .section-subtitle {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    color: var(--gray-mid);
+    text-transform: uppercase;
+    margin-left: auto;
+  }
+
+  /* PROSE */
+  .prose {
+    font-size: 13px;
+    color: var(--gray-text);
+    line-height: 1.75;
+    margin-bottom: 16px;
+  }
+
+  .prose strong {
+    color: var(--navy);
+    font-weight: 600;
+  }
+
+  /* SUBSECTION */
+  .subsection {
+    margin: 24px 0;
+  }
+
+  .subsection-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .subsection-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--gray-light);
+  }
+
+  /* CALLOUT */
+  .callout {
+    border-left: 3px solid var(--accent);
+    padding: 12px 16px;
+    background: rgba(42,173,219,0.04);
+    margin: 16px 0;
+    font-style: italic;
+    color: var(--navy);
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .callout-strong {
+    border-left: 3px solid var(--navy);
+    padding: 12px 16px;
+    background: var(--navy);
+    color: var(--white);
+    margin: 20px 0;
+    font-size: 14px;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5;
+  }
+
+  .callout-strong .highlight { color: var(--accent); }
+
+  /* DECISION CARDS */
+  .decision-card {
+    border: 1px solid var(--gray-light);
+    border-radius: 4px;
+    margin-bottom: 28px;
+    overflow: hidden;
+  }
+
+  .decision-header {
+    background: var(--navy);
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .decision-number {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+
+  .decision-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--white);
+  }
+
+  .decision-tagline {
+    font-size: 11px;
+    color: var(--gray-mid);
+    font-style: italic;
+    margin-left: auto;
+  }
+
+  .decision-body {
+    padding: 20px;
+  }
+
+  /* TWO COLUMN */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 16px 0;
+  }
+
+  .col-block {
+    background: var(--off-white);
+    border-radius: 3px;
+    padding: 14px 16px;
+  }
+
+  .col-block-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .col-block p {
+    font-size: 12px;
+    color: var(--gray-text);
+    line-height: 1.6;
+  }
+
+  /* STOP START PROTECT */
+  .ssp-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 20px 0;
+  }
+
+  .ssp-col { }
+
+  .ssp-header {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 2px;
+  }
+
+  .ssp-stop .ssp-header { background: #FEE2E2; color: var(--red); }
+  .ssp-start .ssp-header { background: #DBEAFE; color: var(--blue); }
+  .ssp-protect .ssp-header { background: #D1FAE5; color: var(--green); }
+
+  .ssp-item {
+    font-size: 12px;
+    color: var(--gray-text);
+    padding: 6px 12px;
+    line-height: 1.5;
+    border-left: 2px solid var(--gray-light);
+    margin-bottom: 6px;
+  }
+
+  .ssp-stop .ssp-item { border-left-color: #FCA5A5; }
+  .ssp-start .ssp-item { border-left-color: #93C5FD; }
+  .ssp-protect .ssp-item { border-left-color: #6EE7B7; }
+
+  /* OUTCOMES */
+  .outcome-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 20px 0;
+  }
+
+  .outcome-card {
+    border: 1px solid var(--gray-light);
+    border-radius: 4px;
+    padding: 16px;
+    position: relative;
+  }
+
+  .outcome-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--blue);
+    border-radius: 4px 4px 0 0;
+  }
+
+  .outcome-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .outcome-icon { font-size: 16px; }
+
+  .outcome-stat {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--blue);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .outcome-desc {
+    font-size: 12px;
+    color: var(--gray-text);
+    line-height: 1.5;
+  }
+
+  /* CLOSING QUOTE */
+  .closing {
+    background: var(--navy);
+    padding: 40px 60px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .closing::before {
+    content: '\201C';
+    position: absolute;
+    top: -20px; left: 40px;
+    font-family: 'Playfair Display', serif;
+    font-size: 180px;
+    color: rgba(255,255,255,0.04);
+    line-height: 1;
+  }
+
+  .closing-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-style: italic;
+    color: var(--white);
+    line-height: 1.6;
+    max-width: 660px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+  }
+
+  .closing-quote .highlight { color: var(--accent); }
+
+  .closing-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .closing-author {
+    font-size: 11px;
+    color: var(--gray-mid);
+  }
+
+  .closing-author strong {
+    color: var(--white);
+    display: block;
+    font-size: 13px;
+    margin-bottom: 2px;
+  }
+
+  .closing-ref {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    color: var(--gray-mid);
+    text-align: right;
+    line-height: 1.8;
+  }
+
+  /* DIVIDER */
+  .divider {
+    height: 1px;
+    background: var(--gray-light);
+    margin: 28px 0;
+  }
+
+  /* PAGE BREAK HINT */
+  .page-section {
+    page-break-before: always;
+  }
+
+  /* PRINT */
+  @media print {
+    body { background: white; }
+    .page { box-shadow: none; max-width: 100%; }
+    .page-section { page-break-before: always; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- COVER -->
+  <div class="cover">
+    <div class="cover-top">
+      <div>
+        <div class="cover-label">Detailed Product Case Study · 2024 — Present · Ongoing</div>
+      </div>
+      <div class="cover-meta">
+        <div class="name">Tsemaye MICHAEL Ikomi</div>
+        <div class="title">Learning Technology Lead</div>
+        <div class="ref">CASE STUDY · 01 · DETAILED · ANONYMISED</div>
+      </div>
+    </div>
+
+    <div class="cover-headline">
+      From Broken Legacy<br>to <span class="highlight">Strategic Platform.</span>
+    </div>
+
+    <div class="cover-subtitle">
+      End-to-end NHS learning platform transformation — procurement, migration,
+      implementation, and expansion across a complex multi-stakeholder environment.
+      A detailed account of the decisions, trade-offs, and lessons.
+    </div>
+
+    <div class="tags">
+      <span class="tag tag-filled">NHS Healthcare</span>
+      <span class="tag tag-filled">Product Ownership</span>
+      <span class="tag tag-outline">LMS</span>
+      <span class="tag tag-outline">ESR</span>
+      <span class="tag tag-outline">Active Directory</span>
+      <span class="tag tag-outline">Change Management</span>
+      <span class="tag tag-outline">ADKAR</span>
+      <span class="tag tag-outline">G-Cloud Procurement</span>
+      <span class="tag tag-outline">Governance</span>
+    </div>
+
+    <div class="metrics">
+      <div class="metric">
+        <div class="metric-label"><span class="metric-icon">👥</span> Scale</div>
+        <div class="metric-number">20,000</div>
+        <div class="metric-desc">Staff served by the platform across the organisation</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label"><span class="metric-icon">📊</span> Adoption</div>
+        <div class="metric-number">13,000+</div>
+        <div class="metric-desc">Staff moved from paper to fully digital appraisals</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label"><span class="metric-icon">🗓</span> Discipline</div>
+        <div class="metric-number">12 <span style="font-size:22px;font-weight:400">mo</span></div>
+        <div class="metric-desc">Controlled pilot iterated before full organisational rollout</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="body-content">
+
+    <!-- SECTION 1 -->
+    <div class="section-header">
+      <div class="section-number">01</div>
+      <div class="section-title">Context</div>
+      <div class="section-subtitle">Setting the scene</div>
+    </div>
+
+    <p class="prose">This case study relates to a large acute NHS Trust — one of the UK's largest — serving nearly 20,000 staff across a complex multi-site environment. Learning and compliance aren't optional in this context — they are regulatory requirements with direct implications for patient safety.</p>
+
+    <p class="prose">When I joined in January 2025, the situation was uncomfortable from day one. The Trust had two systems running simultaneously — a legacy LMS and ESR, the NHS's national electronic staff record system. The legacy LMS had been rushed into production to support an EPR implementation. The people who had configured it had since left the organisation. What they left behind was a system that worked poorly, was poorly trusted, and was creating genuine anxiety at leadership level about the organisation's ability to demonstrate staff compliance.</p>
+
+    <p class="prose">My managers were candid about what I was walking into. There was nervousness. There was fear. The L&D team was at risk of being seen as incompetent — not because of anything they had done, but because the infrastructure they were relying on was broken. And now that infrastructure was my responsibility.</p>
+
+    <p class="prose">There was no runway. No handover. No documentation that could be trusted. Just a list of things the organisation needed — and a system that couldn't yet deliver any of them.</p>
+
+    <div class="callout-strong">
+      What I didn't know then, but understand clearly now, is that I hadn't just inherited a technical problem. I had inherited a <span class="highlight">trust problem.</span> And trust, once broken, doesn't respond to configuration changes.
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section-header">
+      <div class="section-number">02</div>
+      <div class="section-title">What I Found</div>
+      <div class="section-subtitle">Three layers · And the people navigating them</div>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">The Technology</div>
+      <p class="prose">The legacy LMS was worse than I had been briefed. The home page was cluttered and unintuitive. Courses weren't marking as complete — in a compliance-driven NHS environment, that isn't a minor inconvenience, it's a governance failure. Staff who had changed their names through marriage found their records hadn't updated. There were fake accounts. There were accounts created for rooms rather than people. The data was dirty in ways that had accumulated over a long time with no one owning the clean-up.</p>
+      <p class="prose">ESR was its own challenge. Too many people had been given the ability to create courses with no naming conventions enforced. The result was a search experience so broken that if you wanted a user to find a specific course, you had to give them an exact string of text to paste into the search bar — including ampersand symbols before and after key terms just to surface the right result. That is not a learning system. That is a filing cabinet that nobody organised.</p>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">The Governance</div>
+      <p class="prose">The root cause of much of the technology problem was a governance one. Too many people had too much access and no shared standards. Course creation had been decentralised without any framework to ensure consistency. What felt like flexibility had become fragility — everyone could add to the system, nobody was accountable for what it looked like as a whole.</p>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">The Stakeholder Landscape</div>
+      <div class="two-col">
+        <div class="col-block">
+          <div class="col-block-title">✓ Supportive</div>
+          <p>Line manager and Head of L&D — understood the scale of the problem and had brought me in to fix it. Clarity of mandate from above was critical.</p>
+        </div>
+        <div class="col-block">
+          <div class="col-block-title">⚠ Anxious</div>
+          <p>IT team — had their own pressures and systems to protect. Required patient relationship building before meaningful technical collaboration was possible.</p>
+        </div>
+        <div class="col-block">
+          <div class="col-block-title">✗ Obstructive</div>
+          <p>Information Governance — operating from caution by default. IG requirements created delays that could have been avoided with earlier involvement.</p>
+        </div>
+        <div class="col-block">
+          <div class="col-block-title">↗ My honest reaction</div>
+          <p>Week one: <em>"Can I actually do this?"</em> Fear, not paralysis. The scale of what was broken and the weight of fixing it. Both fears were eventually resolved.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section-header page-section">
+      <div class="section-number">03</div>
+      <div class="section-title">The Constraint You Can't Remove</div>
+      <div class="section-subtitle">Navigating ESR</div>
+    </div>
+
+    <p class="prose">There are problems you can solve. And there are constraints you have to build around. ESR is the latter. The NHS Electronic Staff Record is a nationally mandated system that isn't going anywhere — it houses salaries, annual leave, employment records, and personal data. It is the spine of NHS workforce administration. Understanding that early was important. Accepting it took longer.</p>
+
+    <div class="subsection">
+      <div class="subsection-title">The Hard Deadline</div>
+      <p class="prose">When I arrived, both the legacy LMS and ESR were in active use. What changed the equation was the contract expiry on the legacy LMS. There was a hard deadline. Mandatory and non-mandatory training was moved to the new LMS before the ESR API integration was complete. That decision was deliberate — the alternative risked the organisation losing its primary learning platform with nothing functional to replace it.</p>
+      <div class="callout">The deadline made the trade-off clear. Move now, manage the gap, fix the integration as quickly as possible afterwards.</div>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">The Dual System Problem</div>
+      <p class="prose">For the period between the old LMS being decommissioned and the ESR integration being completed, staff were completing mandatory training on the new LMS while ESR had no automated way of knowing about it. A staff member would complete a moving and handling course on the new LMS. The same course existed on ESR. An email would arrive — <em>I've completed this on both systems, what do I do?</em> The people completing courses on both systems weren't being difficult. They were trying to make sure their compliance was recorded somewhere they trusted.</p>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">The API Integration</div>
+      <p class="prose">The complexity came from the relationship between courses and competencies. In ESR, a single course can be linked to multiple competencies. Getting the inbound and outbound connections configured correctly required careful mapping and testing for every connection. The honest reality: I couldn't do it for every course. The API integration was achievable for mandatory training. For other courses, one of the admin team took on a daily manual upload process. It wasn't elegant. But it worked within the constraints that existed.</p>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Managing the User Experience</div>
+      <p class="prose">Staff confusion was inevitable during the transition. On the new LMS, a rolling banner acknowledged the delay between completing something on the LMS and it reflecting on ESR. I reached out to the ESR team to have a corresponding banner placed on their system. Structured communications went out across the organisation.</p>
+      <div class="callout">None of these were glamorous interventions. But they were the right ones — meeting users where they were, in the systems they were already using, with honest and clear information. That is what user experience looks like in a complex NHS environment. Not a beautifully designed onboarding flow. A rolling banner and a well-written email.</div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="section-header page-section">
+      <div class="section-number">04</div>
+      <div class="section-title">The Decisions</div>
+      <div class="section-subtitle">Seven decisions · Each one a product thinking moment</div>
+    </div>
+
+    <!-- D1 -->
+    <div class="decision-card">
+      <div class="decision-header">
+        <div class="decision-number">Decision 01</div>
+        <div class="decision-title">Stabilisation First</div>
+        <div class="decision-tagline">Fix what's broken before building what's new</div>
+      </div>
+      <div class="decision-body">
+        <p class="prose">The instinct when joining a role with a mandate for change is to focus on the new thing. But the right decision here was to fix the old system first — and that came out of an early conversation with my managers. I want to be honest: it was a meeting, a discussion, a shared conclusion. What I contributed was the clarity about why it mattered and the push to prioritise it.</p>
+        <p class="prose">The legacy LMS was what staff were using right now. Courses weren't completing. Users couldn't get in. If we ignored all of that and focused on the new platform, we would be asking staff to trust something new while the existing thing was visibly failing them.</p>
+        <div class="callout">Stabilisation was not a distraction from the real work. It was the foundation without which the real work couldn't happen. A stable foundation isn't a delay — it's a prerequisite.</div>
+      </div>
+    </div>
+
+    <!-- D2 -->
+    <div class="decision-card">
+      <div class="decision-header">
+        <div class="decision-number">Decision 02</div>
+        <div class="decision-title">G-Cloud Procurement & Supplier Selection</div>
+        <div class="decision-tagline">Choosing familiarity over modernity</div>
+      </div>
+      <div class="decision-body">
+        <p class="prose">Four suppliers were evaluated. Each submitted a written bid and presented live via Teams — walking through their platform and making their case. The evaluation group was deliberate: myself, both managers, and a procurement representative. A scoring matrix ensured the evaluation was evidence-based rather than driven by whoever made the best impression.</p>
+        <p class="prose">The recommendation was to stay with the incumbent supplier. The incumbent already had a working relationship with the ICT team — they understood the data architecture, knew which attributes needed to go where, and knew how the SSO configuration worked. There was one strong contender with a more modern platform. But modernity isn't the same as fit.</p>
+        <div class="two-col">
+          <div class="col-block">
+            <div class="col-block-title">What we gained</div>
+            <p>Speed of implementation, reduced integration risk, existing ICT familiarity, and a known quantity in a high pressure moment.</p>
+          </div>
+          <div class="col-block">
+            <div class="col-block-title">What we traded away</div>
+            <p>The possibility of a more modern looking system that might have driven stronger initial engagement from staff.</p>
+          </div>
+        </div>
+        <div class="callout">The best procurement decision isn't always the most exciting one. Sometimes it's the most pragmatic one.</div>
+      </div>
+    </div>
+
+    <!-- D3 -->
+    <div class="decision-card">
+      <div class="decision-header">
+        <div class="decision-number">Decision 03</div>
+        <div class="decision-title">Migration Approach</div>
+        <div class="decision-tagline">What we moved, what we left behind, and why</div>
+      </div>
+      <div class="decision-body">
+        <p class="prose"><strong>Migration is not copying.</strong> Three categories were deliberately not migrated: user accounts created for rooms, outdated courses no longer reflecting current practice, and incorrectly structured learning pathways that were rebuilt from scratch.</p>
+        <p class="prose">Between 300 and 500 courses needed testing. Each SCORM and AICC file was run through SCORM Cloud first, then uploaded to the new LMS and completed end to end to confirm completion criteria triggered correctly. Others helped at points — but the vast majority of this testing was done by me personally. It was painstaking. It was non-negotiable.</p>
+        <p class="prose">All reports were backed up before the legacy system was decommissioned — protecting historical compliance data for the period before the new LMS existed. The permission architecture was designed restrictively from the start. Not to gatekeep — but because I had seen first-hand what happened when nobody did.</p>
+        <div class="callout">You can always open up a system that starts restricted. You cannot easily fix a system that started open and accumulated years of ungoverned content.</div>
+        <p class="prose">Two sets of branded documentation were built from scratch — one staff-facing, one for the L&D team. Version control was embedded from day one: every update recorded at the top with what changed, when, and why.</p>
+      </div>
+    </div>
+
+    <!-- D4 -->
+    <div class="decision-card">
+      <div class="decision-header">
+        <div class="decision-number">Decision 04</div>
+        <div class="decision-title">Pilot Design</div>
+        <div class="decision-tagline">Twelve months of iteration before 13,000 people saw it</div>
+      </div>
+      <div class="decision-body">
+        <p class="prose">The pilot was open to the whole organisation — real-world usage data from a genuinely representative cross-section of staff. Every month, feedback was analysed, reports were run, and findings were presented to the task and finish group — leads from multiple directorates, decisions made by consensus.</p>
+        <p class="prose">Before any analysis could be shared, every personal identifier had to be removed from the reports manually. Only then was the anonymised data processed through Microsoft Copilot to extract thematic analysis — surfacing patterns across hundreds of responses. Responsible AI use isn't a principle to mention in a case study. It's a practice to embed in the process.</p>
+        <p class="prose">One specific change stands out. The objectives section in early versions was too complicated. Feedback prompted a proper rethink — giving staff explicit space to reflect on prior objectives before engaging with the new framework. A small change. The difference between a process that felt coherent and one that felt disconnected.</p>
+
+        <div class="subsection">
+          <div class="subsection-title">The Staff Member Who Refused</div>
+          <p class="prose">I was running a training session on the ground floor. One staff member stood up. He had specific questions about functionality Moodle simply wouldn't support. But underneath them was something more important — nobody had reached out to him or his colleagues before the system was built. He wasn't consulted. His team wasn't consulted. He wasn't going to use it.</p>
+        </div>
+
+        <div class="callout-strong">
+          His resistance was not about the technology. It was about not feeling seen in a process that was going to affect his working life. <span class="highlight">You cannot train your way out of a desire problem.</span> And you cannot retrofit consultation onto a process that needed it at the beginning.
+        </div>
+
+        <p class="prose">The go-live signal came from two places: the task and finish group reaching consensus after 12 months of evidence, and staff feedback telling the same story — the new digital experience was easier and faster. When the people using the thing tell you they prefer it — that's when you know it's ready.</p>
+      </div>
+    </div>
+
+    <!-- D5 -->
+    <div class="decision-card">
+      <div class="decision-header">
+        <div class="decision-number">Decision 05</div>
+        <div class="decision-title">Rollout Strategy</div>
+        <div class="decision-tagline">Taking the product to the people</div>
+      </div>
+      <div class="decision-body">
+        <p class="prose">The rollout was designed to work across multiple touchpoints simultaneously — structured communications, intranet updates, a SharePoint resource hub, and physical cards directing staff to it. No single channel was sufficient. The goal was to make it impossible to be in the organisation and not know the new appraisal system existed.</p>
+        <p class="prose">The roadshow was the most visible and most human part. Over two weeks the team visited two major high-footfall locations — timed deliberately around lunchtime. We had banners. We had flyers. We had sweets and chocolates. And we had a spinning wheel — an idea that came from one of my team members. I deliberately created space for the team to bring their own ideas rather than directing every detail myself. The wheel was tied to organisational values. It worked.</p>
+        <p class="prose">The atmosphere was receptive. Over those two weeks, completed appraisals among participating staff increased by <strong>95-98%</strong> — system data, not a survey or estimate.</p>
+
+        <div class="subsection">
+          <div class="subsection-title">The Pushback</div>
+          <p class="prose">The Director of Pharmacy was direct — her team was navigating multiple simultaneous changes and wasn't ready. What shifted her position wasn't a feature demonstration. It was peer evidence — feedback from colleagues who had been through the pilot and found the new process easier and faster. She came on board.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- D6 -->
+    <div class="decision-card">
+      <div class="decision-header">
+        <div class="decision-number">Decision 06</div>
+        <div class="decision-title">Permission Architecture</div>
+        <div class="decision-tagline">Governance by design — not patched in later</div>
+      </div>
+      <div class="decision-body">
+        <p class="prose">The legacy system and ESR shared the same governance failure — access distributed freely to anyone who requested it, without standards or accountability. The new LMS was designed differently from day one. Access was restricted and intentional. The plan was always to open it up gradually as administrators were trained and the platform matured. That gradual expansion is still ongoing.</p>
+        <div class="callout">Governance by design is not bureaucracy. It is the difference between a platform that stays coherent and one that slowly becomes ungovernable.</div>
+      </div>
+    </div>
+
+    <!-- D7 -->
+    <div class="decision-card">
+      <div class="decision-header">
+        <div class="decision-number">Decision 07</div>
+        <div class="decision-title">Community Teams</div>
+        <div class="decision-tagline">Going to the people who feel furthest away</div>
+      </div>
+      <div class="decision-body">
+        <p class="prose">The community teams — nurses and allied health professionals caring for patients in the community — operate from a building outside the main hospital compound. Physically separate. Operationally distinct. Often feeling disconnected from changes happening at the centre. My manager flagged this early. A standard rollout — a Teams session, an email, a link to a guide — wouldn't land the same way for this group.</p>
+        <p class="prose">Rather than expecting them to engage through the same channels as everyone else, we went to them. Specific rooms were booked at their site. Training was delivered in person. Content was tailored to their context. The outcome was a gradual but measurable increase in completed appraisals from that staff group.</p>
+        <div class="callout">User segmentation is not a product design concept that lives in a workshop. It is the practical recognition that different people need different things — and that reaching them sometimes means going where they are rather than waiting for them to come to you.</div>
+      </div>
+    </div>
+
+    <!-- SECTION 5 -->
+    <div class="section-header page-section">
+      <div class="section-number">05</div>
+      <div class="section-title">The Outcomes</div>
+      <div class="section-subtitle">What actually changed</div>
+    </div>
+
+    <p class="prose">Outcomes in a complex NHS transformation don't always arrive in neat percentages. Some are measurable immediately. Some reveal themselves gradually. Some are structural — changes to how a system works that prevent future problems rather than producing headline numbers.</p>
+
+    <div class="outcome-grid">
+      <div class="outcome-card">
+        <div class="outcome-title"><span class="outcome-icon">👥</span> Scale</div>
+        <div class="outcome-stat">20,000</div>
+        <div class="outcome-desc">Staff now have access to a learning platform that works. Given what the legacy system looked like on arrival, this is not a low bar.</div>
+      </div>
+      <div class="outcome-card">
+        <div class="outcome-title"><span class="outcome-icon">📋</span> Appraisal Transformation</div>
+        <div class="outcome-stat">13,000+</div>
+        <div class="outcome-desc">Staff moved from paper to fully digital appraisals following a 12-month controlled pilot. Staff described it as easier and faster.</div>
+      </div>
+      <div class="outcome-card">
+        <div class="outcome-title"><span class="outcome-icon">🚀</span> Roadshow Impact</div>
+        <div class="outcome-stat">95–98%</div>
+        <div class="outcome-desc">Increase in appraisal completions among participating staff over the two-week roadshow period. System data — not a survey.</div>
+      </div>
+      <div class="outcome-card">
+        <div class="outcome-title"><span class="outcome-icon">🛡</span> Governance</div>
+        <div class="outcome-stat">Zero</div>
+        <div class="outcome-desc">Content governance failures of the legacy system have not been replicated. An outcome measured in problems that haven't happened. It counts.</div>
+      </div>
+    </div>
+
+    <p class="prose">Community teams showed a gradual, measurable increase in appraisal completions following bespoke in-person training. Staff recognition — via Active Directory integration — replaced a manual free-text nomination process, eliminating significant administrative burden. The nursing framework pilot is underway with users involved from the start. This is a programme still running. The outcomes here reflect where things stand now — not where they will eventually be.</p>
+
+    <!-- SECTION 6 -->
+    <div class="section-header page-section">
+      <div class="section-number">06</div>
+      <div class="section-title">What I'd Do Differently</div>
+      <div class="section-subtitle">An honest retrospective</div>
+    </div>
+
+    <div class="ssp-grid">
+      <div class="ssp-col ssp-stop">
+        <div class="ssp-header">Would Change</div>
+        <div class="ssp-item">Start discovery before procurement — validate the requirements list through user interviews, not assumption</div>
+        <div class="ssp-item">Define success criteria upfront — not recognised retrospectively</div>
+        <div class="ssp-item">Involve end users before the build — ADKAR from day one, not at launch stage</div>
+        <div class="ssp-item">Engage Information Governance earlier — caution that arrives late becomes obstruction</div>
+        <div class="ssp-item">Make stakeholder consensus visible across directorates throughout — not only when resistance emerges</div>
+        <div class="ssp-item">Build and communicate a product roadmap — so stakeholders feel part of a journey</div>
+      </div>
+      <div class="ssp-col ssp-start">
+        <div class="ssp-header">Would Start Earlier</div>
+        <div class="ssp-item">Cross-functional group involvement — used earlier and more deliberately from the very beginning</div>
+        <div class="ssp-item">Structured stakeholder mapping — surface friction points before they become blockers</div>
+        <div class="ssp-item">User research with community teams — before designing for them, not after</div>
+        <div class="ssp-item">Regular roadmap communication to leadership — visibility of direction reduces surprise</div>
+      </div>
+      <div class="ssp-col ssp-protect">
+        <div class="ssp-header">Would Protect</div>
+        <div class="ssp-item">Pilot before full rollout — always advocate for this</div>
+        <div class="ssp-item">Governance by design — restricted access from the start was right</div>
+        <div class="ssp-item">Post go-live feedback mechanism — structured feedback shouldn't stop at pilot</div>
+        <div class="ssp-item">Going physically to community teams — meet people where they are</div>
+        <div class="ssp-item">Cross-functional task and finish group — just involve them earlier</div>
+      </div>
+    </div>
+
+    <!-- SECTION 7 -->
+    <div class="section-header page-section">
+      <div class="section-number">07</div>
+      <div class="section-title">What This Taught Me About Product Work</div>
+      <div class="section-subtitle">The real work was never the product</div>
+    </div>
+
+    <p class="prose">Before this role I thought product work was about managing and owning a product. Keeping it running. Making it better. Delivering the next thing on the list.</p>
+
+    <p class="prose">I understand now that it's about something much more fundamental than that.</p>
+
+    <p class="prose">The product is the easy part. The relationships around the product — the people who commission it, the people who build it, the people who govern it, the people who are supposed to use it, and the people who resist it — those relationships determine whether the product succeeds or fails. Not the configuration. Not the features. Not the technical architecture. <strong>The people.</strong></p>
+
+    <p class="prose">Every significant lesson from this programme points back to the same place. The staff member who stood up in the training room wasn't rejecting the technology. He was telling me that the relationship between the product and its users had broken down before it had even begun. The pharmacy director who pushed back wasn't being obstructive. She was telling me that the relationship between the programme and its stakeholders hadn't been built carefully enough. The community teams who needed bespoke training weren't being difficult. They were telling me that the relationship between the organisation and its most isolated staff needed deliberate tending.</p>
+
+    <div class="callout">In every case the answer wasn't a better product. It was a better relationship.</div>
+
+    <div class="subsection">
+      <div class="subsection-title">What Product Ownership Actually Means</div>
+      <p class="prose">I came into this role with a job title that said developer. What I actually did was own outcomes. That distinction changes how you approach every decision.</p>
+      <div class="two-col">
+        <div class="col-block">
+          <div class="col-block-title">A developer asks</div>
+          <p><em>How do I build this?</em></p>
+        </div>
+        <div class="col-block">
+          <div class="col-block-title">A product owner asks</div>
+          <p><em>Should I build this, and if so, for whom, and how will I know if it worked?</em></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">What I'm Still Learning</div>
+      <p class="prose">I did not come into this role as a product person. I am becoming one through the work itself — through the decisions made, the mistakes recognised, the frameworks applied not in theory but under real pressure with real consequences. The nursing framework pilot is running right now with users involved from the start. The recognition feature is embedding. The platform roadmap is forming. Each new piece of work is an opportunity to apply what the last piece taught.</p>
+      <p class="prose">That is what product thinking looks like in practice. Not a methodology applied cleanly to a greenfield problem. A discipline developed through iteration — on the product, and on yourself.</p>
+    </div>
+
+  </div>
+
+  <!-- CLOSING -->
+  <div class="closing">
+    <div class="closing-quote">
+      "The technology was never the hard part. The <span class="highlight">human system</span> around the technology — the trust, the habits, the competing priorities, the governance constraints — that is where the real product work happened. Build the relationships first. The product will follow."
+    </div>
+    <div class="closing-footer">
+      <div class="closing-author">
+        <strong>Tsemaye MICHAEL Ikomi</strong>
+        Learning Technology Lead · NHS · 2024–Present
+      </div>
+      <div class="closing-ref">
+        REF · CS-01 / NHS-LMS<br>
+        ANONYMISED ACCOUNT<br>
+        PERSONAL REFLECTION<br>
+        2024 — PRESENT
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
