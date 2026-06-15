@@ -894,6 +894,143 @@
     </div>
   </div>
 
+  <!-- DISCOVERY LOG -->
+  <div class="sub-title" style="margin-top: 32px;">Discovery Log</div>
+  <p class="prose">The following sessions document discovery work in progress. No build decisions have been made from these sessions. They represent the product thinking happening before any configuration begins.</p>
+
+  <!-- AHP SESSION 1 -->
+  <div class="artefact-block">
+    <div class="artefact-header">
+      <div class="artefact-tag">Discovery · Session 01</div>
+      <div class="artefact-title">AHP Development Framework — Initial Discovery</div>
+    </div>
+    <div class="artefact-body">
+
+      <div class="artefact-section-title">Context</div>
+      <p class="artefact-text">Allied Health Professionals represent approximately 12 staff groups within the Trust. AHP staff are required to revalidate with the Health and Care Professions Council every two years. There is a national AHP framework structured around four pillars — clinical, education, leadership, and research. This session was the first conversation with the AHP Lead before any wider stakeholder involvement.</p>
+
+      <div class="artefact-section-title">The Problem — In Her Words</div>
+      <p class="artefact-text">Graduates with defined career pathways want to progress but there is no infrastructure within the Trust to support that progression. Evidence for revalidation is currently kept informally in personal drives. There is no single place that shows what is expected of an AHP at their particular stage of development. There is no visible connection between the Trust's AHP staff and the national framework.</p>
+
+      <div class="artefact-section-title">What Success Looks Like</div>
+      <div class="ac-item"><span class="ac-check">→</span>Any staff member at any career stage can see what is expected of them at their current level</div>
+      <div class="ac-item"><span class="ac-check">→</span>Someone wanting to progress can see and identify exactly what they need to do next</div>
+      <div class="ac-item"><span class="ac-check">→</span>Teams can see the structure they need to create training plans for their staff</div>
+      <div class="ac-item"><span class="ac-check">→</span>The LMS can accept PDF uploads for HCPC revalidation evidence storage</div>
+
+      <div class="artefact-section-title">What We Don't Know Yet</div>
+      <div class="ac-item"><span class="ac-check">?</span>What the LMS can technically support — supplier conversation required before any commitments</div>
+      <div class="ac-item"><span class="ac-check">?</span>What the national AHP framework looks like in full and how it maps to the four pillars in practice</div>
+      <div class="ac-item"><span class="ac-check">?</span>What end users actually need — discovery call with AHP staff being arranged</div>
+      <div class="ac-item"><span class="ac-check">?</span>Whether PDF upload is feasible within current LMS configuration</div>
+      <div class="ac-item"><span class="ac-check">?</span>What the blueprint from another NHS Trust looks like in detail — spreadsheet shared but not yet reviewed</div>
+
+      <div class="artefact-section-title">Next Steps</div>
+      <div class="ac-item"><span class="ac-check">→</span>Supplier meeting — understand what is technically possible before any design decisions</div>
+      <div class="ac-item"><span class="ac-check">→</span>End user discovery call — Michael to be included to set the tone</div>
+      <div class="ac-item"><span class="ac-check">→</span>Review blueprint spreadsheet from other Trust</div>
+      <div class="ac-item"><span class="ac-check">→</span>Contact the other Trust's LMS specialist for implementation insights</div>
+
+      <div class="callout">No configuration decisions will be made before end users have been consulted. The discovery call with AHP staff is a prerequisite to any supplier or build conversation.</div>
+
+    </div>
+  </div>
+
+  <!-- AHP SESSION 2 -->
+  <div class="artefact-block">
+    <div class="artefact-header">
+      <div class="artefact-tag">Discovery · Session 02</div>
+      <div class="artefact-title">AHP Development Framework — Multi-Stakeholder Discovery</div>
+    </div>
+    <div class="artefact-body">
+
+      <div class="artefact-section-title">Context</div>
+      <p class="artefact-text">A broader group session with the AHP Lead and leads from multiple AHP workstreams. This session surfaced shared themes, genuine tensions, and a clearer picture of the priority need.</p>
+
+      <div class="artefact-section-title">What the Group Said</div>
+      <p class="artefact-text">The therapy lead shared an existing Word document that staff carry across multiple Trusts — a portable record of learning and development gaps. This shows some workstreams already have informal solutions in place. Multiple leads expressed a desire for one place combining appraisals, CPD, revalidation, career logging, and learning resources linked to the four pillars. Career progression visibility was a recurring theme — staff currently have to go to their manager to find out where they are and what they need to do next. The group was clear that course completion should not imply automatic career progression — framing matters as much as functionality.</p>
+
+      <div class="artefact-section-title">Tensions Identified</div>
+      <div class="decision-entry">
+        <div class="de-header">Tension 01 — Scope</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">The ask</div><div class="de-cell-value">Appraisals, CPD, revalidation, career logging, and learning resources all in one place</div></div>
+          <div class="de-cell"><div class="de-cell-label">The risk</div><div class="de-cell-value">Building too much too soon before proving value with a smaller scope</div></div>
+          <div class="de-cell"><div class="de-cell-label">The principle</div><div class="de-cell-value">Start with the highest priority need, prove value, then expand</div></div>
+        </div>
+      </div>
+      <div class="decision-entry">
+        <div class="de-header">Tension 02 — Duplication</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">The question</div><div class="de-cell-value">Does a competency framework duplicate the appraisal work already being done?</div></div>
+          <div class="de-cell"><div class="de-cell-label">The likely answer</div><div class="de-cell-value">Appraisals as a conversation, the framework as a development reference — different purposes</div></div>
+          <div class="de-cell"><div class="de-cell-label">Status</div><div class="de-cell-value">Unresolved — needs explicit agreement before any build decisions</div></div>
+        </div>
+      </div>
+      <div class="decision-entry">
+        <div class="de-header">Tension 03 — Portable vs Platform</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">The signal</div><div class="de-cell-value">The therapy lead's Word document is working and travels across Trusts</div></div>
+          <div class="de-cell"><div class="de-cell-label">The risk</div><div class="de-cell-value">Building a platform solution that isn't meaningfully better than what already exists</div></div>
+          <div class="de-cell"><div class="de-cell-label">The question</div><div class="de-cell-value">What does the LMS offer that a Word document cannot?</div></div>
+        </div>
+      </div>
+
+      <div class="artefact-section-title">The Priority — What They Said</div>
+      <div class="pull-quote" style="margin: 12px 0;">
+        <div class="pull-quote-text">A single place where a staff member can independently see where they are in their career, what they need to do next, and what learning they need to achieve to grow — without needing to ask their manager.</div>
+      </div>
+
+      <div class="artefact-section-title">What Success Looks Like — Emerging Picture</div>
+      <div class="ac-item"><span class="ac-check">→</span>Staff can independently look up their career position and next steps without asking their manager</div>
+      <div class="ac-item"><span class="ac-check">→</span>Managers can point staff to a structured reference for development planning</div>
+      <div class="ac-item"><span class="ac-check">→</span>Learning resources are visible and linked to the four pillars of practice</div>
+      <div class="ac-item"><span class="ac-check">→</span>The solution sparks development conversations — it does not replace them</div>
+      <div class="ac-item"><span class="ac-check">→</span>Framing is clear — completing a course does not automatically mean career progression</div>
+
+      <div class="artefact-section-title">Next Steps — Agreed</div>
+      <div class="ac-item"><span class="ac-check">→</span>Speak to the other Trust contact — understand their implementation and lessons learned</div>
+      <div class="ac-item"><span class="ac-check">→</span>Supplier conversation — understand what the LMS can technically support</div>
+      <div class="ac-item"><span class="ac-check">→</span>End user survey — wider AHP staff input. Michael to have input into survey questions.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Return to the group with what is possible and what is not before any build decisions</div>
+
+      <div class="callout">The priority is clear even if the scope is not. People don't know what's available — and when they find out, there's no structured way to act on it. That is the problem worth solving first.</div>
+
+    </div>
+  </div>
+
+  <!-- NURSING SESSION -->
+  <div class="artefact-block">
+    <div class="artefact-header">
+      <div class="artefact-tag">User Testing · Session 01</div>
+      <div class="artefact-title">Nursing Competency Framework — First Iteration Review</div>
+    </div>
+    <div class="artefact-body">
+
+      <div class="artefact-section-title">Context</div>
+      <p class="artefact-text">First user testing session with nursing staff on the competency framework pilot. Unlike the appraisal rollout — where users were not involved until training — this workstream has involved users from the pilot stage. This session is Build-Measure-Learn in practice.</p>
+
+      <div class="artefact-section-title">Feedback Received</div>
+      <div class="ac-item"><span class="ac-check">↻</span>Wording on certain buttons needs reviewing — language did not feel natural or clear to users</div>
+      <div class="ac-item"><span class="ac-check">↻</span>Positioning of certain sections needs adjustment — layout did not match how users expected to navigate</div>
+      <div class="ac-item"><span class="ac-check">↻</span>Structure of certain sections needs rethinking — organisation of content did not align with how nurses think about their competency requirements</div>
+
+      <div class="artefact-section-title">Decisions Made</div>
+      <div class="ac-item"><span class="ac-check">✓</span>Users will be kept involved and consulted on the next version before it goes live</div>
+      <div class="ac-item"><span class="ac-check">✓</span>No changes to be made without going back to the user group first</div>
+      <div class="ac-item"><span class="ac-check">✓</span>Specific wording, positioning, and structure changes to be scoped for iteration two</div>
+
+      <div class="artefact-section-title">Next Steps</div>
+      <div class="ac-item"><span class="ac-check">→</span>Document specific changes needed from session feedback</div>
+      <div class="ac-item"><span class="ac-check">→</span>Share proposed changes with nursing group before implementing</div>
+      <div class="ac-item"><span class="ac-check">→</span>Schedule iteration two review session</div>
+      <div class="ac-item"><span class="ac-check">→</span>Update acceptance criteria to reflect any new requirements surfaced</div>
+
+      <div class="callout">This is what involving users before full rollout looks like in practice. The pilot surfaces real experience issues that wouldn't have been visible otherwise. The next iteration has a clear brief.</div>
+
+    </div>
+  </div>
+
 </div>
 
 <!-- WHAT'S NEXT -->
