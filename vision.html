@@ -860,6 +860,88 @@
     </div>
   </div>
 
+  <!-- DECISION LOG: ESR INTEGRATION -->
+  <div class="artefact-block">
+    <div class="artefact-header">
+      <div class="artefact-tag">Decision Log · DL-05</div>
+      <div class="artefact-title">ESR Training Assignment — Role-Based vs Attribute-Based Design</div>
+    </div>
+    <div class="artefact-body">
+
+      <div class="artefact-section-title">The Problem</div>
+      <p class="artefact-text">The LMS supplier raised a concern about using ESR Position Number as the primary mechanism for assigning mandatory training. Internal stakeholders favoured position number as the simplest and most familiar key — already used for Position Learning Needs in ESR. This created a genuine architectural conflict: two reasonable positions pulling in opposite directions, with real operational consequences either way.</p>
+
+      <div class="artefact-section-title">The Options</div>
+      <div class="decision-entry">
+        <div class="de-header">Option 01 — Position Number Only</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">Approach</div><div class="de-cell-value">Use position number as the sole assignment key across all training types</div></div>
+          <div class="de-cell"><div class="de-cell-label">Benefit</div><div class="de-cell-value">Simple to configure. Familiar to internal stakeholders. Already used in ESR for Position Learning Needs.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Risk</div><div class="de-cell-value">New positions don't inherit rules. Restructures require bulk remapping. Audit trail is weak.</div></div>
+        </div>
+      </div>
+      <div class="decision-entry">
+        <div class="de-header">Option 02 — ESR Attributes Only</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">Approach</div><div class="de-cell-value">Use Job Role, Staff Group, Area of Work as the primary assignment keys</div></div>
+          <div class="de-cell"><div class="de-cell-label">Benefit</div><div class="de-cell-value">Scales and survives reorganisation. Fewer than 20 staff groups — rules are maintainable.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Risk</div><div class="de-cell-value">Loses administrative simplicity where training needs are genuinely uniform across occupants.</div></div>
+        </div>
+      </div>
+      <div class="decision-entry">
+        <div class="de-header">Option 03 — Hybrid Model</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">Approach</div><div class="de-cell-value">Use each mechanism where it performs best — position number for generic mandatory training, ESR attributes for specialist training, position number as an overlay for post-specific exceptions</div></div>
+          <div class="de-cell"><div class="de-cell-label">Benefit</div><div class="de-cell-value">Administrative simplicity where risk is low. Compliance accuracy where role variation matters. Scalable model that survives restructures.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Risk</div><div class="de-cell-value">More complex initial configuration. Requires clear governance on which rule type applies to which training category.</div></div>
+        </div>
+      </div>
+
+      <div class="artefact-section-title">Testing the Assumption</div>
+      <p class="artefact-text">Rather than resolving the debate on theory, a live mandatory training export was pulled to test a concrete question — do positions with multiple occupants actually have differing training needs in practice? One position identified had multiple staff attached — one on internal secondment, others on active assignment. On closer inspection, all occupants held the same role, on the same ward, with no secondment-sensitive training requirements in this instance.</p>
+      <div class="callout">The real test is not "does one position have multiple people" — it is "do any of those people need different training." That distinction turned a binary disagreement into a scoped, evidence-based design decision.</div>
+
+      <div class="artefact-section-title">The Decision — Hybrid Model</div>
+      <div class="decision-entry">
+        <div class="de-header">Generic Mandatory and Statutory Training</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">Primary Key</div><div class="de-cell-value">Position Number</div></div>
+          <div class="de-cell"><div class="de-cell-label">Rationale</div><div class="de-cell-value">Training need is uniform across occupants. Simplest to maintain at scale.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Outcome</div><div class="de-cell-value">Reduced maintenance overhead. No bulk remapping required for restructures.</div></div>
+        </div>
+      </div>
+      <div class="decision-entry">
+        <div class="de-header">Competency-Based, Specialist and Professional Registration Training</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">Primary Key</div><div class="de-cell-value">Job Role · Staff Group · Area of Work</div></div>
+          <div class="de-cell"><div class="de-cell-label">Rationale</div><div class="de-cell-value">Occupants of the same position can have genuinely different needs. Attribute-based rules scale and survive reorganisation.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Outcome</div><div class="de-cell-value">Compliance accuracy maintained even where role variation exists within a position.</div></div>
+        </div>
+      </div>
+      <div class="decision-entry">
+        <div class="de-header">Post-Specific Exceptions</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">Primary Key</div><div class="de-cell-value">Position Number as an overlay</div></div>
+          <div class="de-cell"><div class="de-cell-label">Rationale</div><div class="de-cell-value">Adds a targeted additional requirement on top of a role-based baseline without creating a parallel rule system.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Outcome</div><div class="de-cell-value">Post-specific needs met without undermining the scalability of the core model.</div></div>
+        </div>
+      </div>
+
+      <div class="artefact-section-title">Stakeholder Communication</div>
+      <p class="artefact-text">The same decision was communicated differently to two audiences. To the supplier — technical framing referencing the mechanism directly, with an invitation for further input on ESR data quality across other Trusts. To internal management — plain language: here were the three concerns raised, here is why they were valid, and here is what we are doing about each one. One recommendation. Two calibrated explanations. A single source of truth delivered at the altitude each audience needed.</p>
+
+      <div class="artefact-section-title">Trade-Off</div>
+      <div class="de-tradeoff" style="padding: 12px 14px; margin-top: 8px;">What we accepted: more complex initial configuration and a requirement for clear governance on which rule type applies to which training category. What we avoided: either a maintenance risk at scale or compliance gaps in specialist training — the two failure modes of an all-or-nothing choice.</div>
+
+      <div class="artefact-section-title">Success Signal</div>
+      <div class="ac-item"><span class="ac-check">→</span>Training assignments are accurate for staff in complex positions — secondments, multiple role holders, restructured teams</div>
+      <div class="ac-item"><span class="ac-check">→</span>No bulk remapping required when new positions are created for generic mandatory training</div>
+      <div class="ac-item"><span class="ac-check">→</span>Audit trail is meaningful — training assignments explained by role and staff group, not just position number</div>
+      <div class="ac-item"><span class="ac-check">→</span>Supplier confirms hybrid model is technically feasible within the current ESR integration architecture</div>
+
+    </div>
+  </div>
+
   <!-- ARTEFACT 2: NURSING FRAMEWORK -->
   <div class="artefact-block">
     <div class="artefact-header">
