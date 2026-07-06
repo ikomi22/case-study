@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Decisions — CS·01</title>
+<title>Product Decisions — CS·01</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -13,13 +13,13 @@
   <div class="top-nav-inner">
     <a href="index.html" class="top-nav-brand">CS·01</a>
     <div class="top-nav-links">
-      <a href="index.html">Home</a>
-      <a href="context.html">01 · Context</a>
-      <a href="journey.html">02 · Journey</a>
-      <a href="decisions.html">03 · Decisions</a>
-      <a href="outcomes.html">04 · Outcomes</a>
-      <a href="reflection.html">05 · Reflection</a>
-      <a href="vision.html">06 · Vision</a>
+      <a href="index.html">01 · Overview</a>
+      <a href="context.html">02 · Context</a>
+      <a href="strategy.html">03 · Strategy</a>
+      <a href="decisions.html">04 · Decisions</a>
+      <a href="discovery.html">05 · Discovery</a>
+      <a href="outcomes.html">06 · Outcomes</a>
+      <a href="reflection.html">07 · Reflection</a>
     </div>
   </div>
 </nav>
@@ -30,15 +30,15 @@
 
 <div class="document">
 
-<!-- SECTION 04: DECISIONS -->
 <div class="section section-alt" id="decisions">
   <div class="section-label">
     <div class="section-num">04</div>
-    <div class="section-title-text">The Decisions</div>
-    <div class="section-subtitle-text">Seven moments · Problem → Decision → Outcome</div>
+    <div class="section-title-text">Product Decisions</div>
+    <div class="section-subtitle-text">Problem, options, trade-offs, and what happened next</div>
   </div>
 
-  <!-- D1 -->
+  <p class="prose">These are the decisions that changed the shape of the product. Some were strategic, some operational, some technical, and several were shared with other leaders. I have kept that distinction visible rather than rewriting the story to make every decision look solitary in hindsight.</p>
+
   <div class="decision-card">
     <div class="decision-header">
       <div class="d-num">Decision 01</div>
@@ -48,27 +48,26 @@
     <div class="d-framework">
       <div class="d-frame-item">
         <div class="d-frame-label">Problem</div>
-        <div class="d-frame-value">Staff using a broken system daily while new platform is being procured</div>
+        <div class="d-frame-value">Staff were using a broken system every day while a new platform was still being procured.</div>
       </div>
       <div class="d-frame-item">
         <div class="d-frame-label">Constraint</div>
-        <div class="d-frame-value">Cannot build trust in something new while the existing thing is visibly failing</div>
+        <div class="d-frame-value">A new system would not earn trust while the existing one was visibly failing.</div>
       </div>
       <div class="d-frame-item">
         <div class="d-frame-label">Decision</div>
-        <div class="d-frame-value">Fix legacy LMS first — SSO, completions, pathways, user guides</div>
+        <div class="d-frame-value">Fix the legacy LMS first — SSO, completions, pathways, and user guidance.</div>
       </div>
       <div class="d-frame-item outcome-frame">
         <div class="d-frame-label">Outcome</div>
-        <div class="d-frame-value">Foundation of trust restored before new platform launched</div>
+        <div class="d-frame-value">A foundation of trust was restored before the new platform launched.</div>
       </div>
     </div>
     <div class="d-narrative">
-      <p>This was a shared decision made in an early meeting with my managers — I want to be honest about that. What I brought to that conversation was both the clarity about why it mattered and the structured workplan that gave the decision a delivery framework. <strong>A stable foundation isn't a delay — it's a prerequisite.</strong></p>
+      <p>This was a shared decision made early with my managers. What I brought was the clarity about why it mattered and the structured workplan that gave it a delivery frame. A stable foundation is not a delay. It is a prerequisite.</p>
     </div>
   </div>
 
-  <!-- D2 -->
   <div class="decision-card">
     <div class="decision-header">
       <div class="d-num">Decision 02</div>
@@ -78,34 +77,33 @@
     <div class="d-framework">
       <div class="d-frame-item">
         <div class="d-frame-label">Problem</div>
-        <div class="d-frame-value">Contract expiry on legacy LMS. Need a new platform — fast, governed, right</div>
+        <div class="d-frame-value">The legacy LMS contract was expiring. A new platform had to be selected quickly and properly.</div>
       </div>
       <div class="d-frame-item">
-        <div class="d-frame-label">Process</div>
-        <div class="d-frame-value">G-Cloud framework · Scoring matrix · 4 suppliers · Written bids + live demos</div>
+        <div class="d-frame-label">Options</div>
+        <div class="d-frame-value">Four suppliers were evaluated through G-Cloud scoring, written bids, and live demos.</div>
       </div>
       <div class="d-frame-item">
         <div class="d-frame-label">Decision</div>
-        <div class="d-frame-value">Incumbent supplier recommended — existing ICT relationship, known data architecture</div>
+        <div class="d-frame-value">Recommend the incumbent supplier because the ICT relationship and data architecture were already understood.</div>
       </div>
       <div class="d-frame-item outcome-frame">
         <div class="d-frame-label">Outcome</div>
-        <div class="d-frame-value">Fast implementation, reduced integration risk, smooth SSO from day one</div>
+        <div class="d-frame-value">Faster implementation, smoother SSO, and lower integration risk in a high-pressure window.</div>
       </div>
     </div>
     <div class="tradeoff-split">
       <div class="tradeoff-side">
         <div class="tradeoff-label">What we traded away</div>
-        <div class="tradeoff-text">A more modern-looking platform from a strong contender — fresher UI, more contemporary UX that might have driven stronger initial engagement.</div>
+        <div class="tradeoff-text">A more modern-looking platform from a strong contender that may have driven stronger initial engagement.</div>
       </div>
       <div class="tradeoff-side">
         <div class="tradeoff-label">What we gained</div>
-        <div class="tradeoff-text">Speed of implementation, existing ICT familiarity, known data architecture, reduced risk at a high-pressure moment with a hard deadline.</div>
+        <div class="tradeoff-text">Implementation speed, ICT familiarity, known data architecture, and lower enterprise risk at a hard deadline.</div>
       </div>
     </div>
   </div>
 
-  <!-- D3 -->
   <div class="decision-card">
     <div class="decision-header">
       <div class="d-num">Decision 03</div>
@@ -115,29 +113,27 @@
     <div class="d-framework">
       <div class="d-frame-item">
         <div class="d-frame-label">Problem</div>
-        <div class="d-frame-value">300–500 courses, dirty data, fake accounts, broken pathways — what moves and what doesn't?</div>
+        <div class="d-frame-value">300–500 courses, dirty data, fake accounts, and broken pathways raised the question of what should move and what should not.</div>
       </div>
       <div class="d-frame-item">
-        <div class="d-frame-label">Constraint</div>
-        <div class="d-frame-value">Contract expiry June 2025 — migrate or lose it. Migrating everything = migrating every problem. Compliance data must be preserved.</div>
+        <div class="d-frame-label">Evidence</div>
+        <div class="d-frame-value">Migrating everything would also migrate every governance failure. Compliance history still had to be preserved.</div>
       </div>
       <div class="d-frame-item">
         <div class="d-frame-label">Decision</div>
-        <div class="d-frame-value">Deliberate curation — left dirty data behind. Every SCORM/AICC tested. All reports backed up.</div>
+        <div class="d-frame-value">Curate deliberately. Leave dirty data behind. Test every SCORM and AICC package. Back up all reports.</div>
       </div>
       <div class="d-frame-item outcome-frame">
         <div class="d-frame-label">Outcome</div>
-        <div class="d-frame-value">Clean platform, zero legacy governance failures replicated, historical data preserved</div>
+        <div class="d-frame-value">A cleaner platform, preserved historical data, and no replication of legacy governance failures.</div>
       </div>
     </div>
     <div class="d-narrative">
-      <p><strong>What was deliberately left behind:</strong> Room accounts. Outdated courses. Incorrectly structured pathways rebuilt from scratch. Edge cases fixed — student nurses, maternity returners, people outside the standard data pipeline — all given documented workarounds that the legacy system never resolved.</p>
-      <p><strong>Governance by design:</strong> The permission architecture was designed restrictively from day one — agreed with my managers as a deliberate quality decision. You can always open a system that starts restricted. You cannot easily fix a system that started open and accumulated years of ungoverned content.</p>
+      <p><strong>What was deliberately left behind:</strong> room accounts, outdated courses, incorrectly structured pathways, and edge cases that the legacy system had never resolved properly.</p>
+      <p><strong>Governance by design:</strong> permissions were designed restrictively from day one. You can always open a system that starts restricted. You cannot easily repair a system that started open and accumulated years of ungoverned content.</p>
     </div>
-    <div class="callout">Every decision was a trade-off between speed and integrity. Integrity won.</div>
   </div>
 
-  <!-- D4 -->
   <div class="decision-card">
     <div class="decision-header">
       <div class="d-num">Decision 04</div>
@@ -147,31 +143,30 @@
     <div class="d-framework">
       <div class="d-frame-item">
         <div class="d-frame-label">Problem</div>
-        <div class="d-frame-value">Moving 13,000+ staff from paper to digital — too high stakes to launch unvalidated</div>
+        <div class="d-frame-value">Moving 13,000+ staff from paper to digital was too high stakes to launch without validation.</div>
       </div>
       <div class="d-frame-item">
-        <div class="d-frame-label">Method</div>
-        <div class="d-frame-value">Open pilot · Monthly analysis · Copilot on anonymised feedback · Cross-functional group</div>
+        <div class="d-frame-label">Evidence</div>
+        <div class="d-frame-value">Open pilot, monthly analysis, anonymised feedback review, and a cross-functional group surfaced what was not working.</div>
       </div>
       <div class="d-frame-item">
-        <div class="d-frame-label">Key Change</div>
-        <div class="d-frame-value">Objectives section redesigned — space to reflect on prior goals before new framework</div>
+        <div class="d-frame-label">Decision</div>
+        <div class="d-frame-value">Keep the pilot open for twelve months and iterate before go-live.</div>
       </div>
       <div class="d-frame-item outcome-frame">
         <div class="d-frame-label">Outcome</div>
-        <div class="d-frame-value">Staff described new process as easier and faster — consensus to launch after 12 months</div>
+        <div class="d-frame-value">Consensus that the process was easier and faster than paper before organisational rollout.</div>
       </div>
     </div>
     <div class="d-narrative">
-      <p><strong>Discovery before build:</strong> Before a single element of the appraisal was configured on the LMS, I met with the People Promise Manager — the person who owned the previous appraisal process. She understood the feedback and lived experience of staff better than anyone. What she described was a Word document that had become a source of frustration — when staff typed into it, the formatting broke, fields moved, and the document became unpredictable to complete. That conversation shaped everything that followed. As an interim fix while the LMS version was being built, I patched the Word document and returned it — reducing the immediate pain while the proper solution was in progress. That instinct to stabilise the existing process while designing the replacement is the same principle that drove the platform work from the start.</p>
-      <p>Responsible AI use in practice: personal identifiers manually removed from every feedback report before Copilot extracted thematic analysis. That's not a principle to cite. It's a practice to embed.</p>
+      <p><strong>Discovery before build:</strong> before a single element of the appraisal was configured on the LMS, I met with the People Promise Manager who owned the previous process. She described a Word document that broke when people typed into it. That conversation shaped the design and also prompted an interim fix to reduce pain while the digital version was being built.</p>
+      <p>Responsible AI use in practice: personal identifiers were manually removed from feedback reports before Copilot was used for thematic analysis.</p>
     </div>
     <div class="pull-quote">
       <div class="pull-quote-text">In a training session, a staff member stood up and told me directly he wasn't going to use the system. His resistance wasn't about the technology. It was about not feeling consulted. <span class="hl">You cannot train your way out of a desire problem.</span></div>
     </div>
   </div>
 
-  <!-- D5 -->
   <div class="decision-card">
     <div class="decision-header">
       <div class="d-num">Decision 05</div>
@@ -181,46 +176,169 @@
     <div class="d-framework">
       <div class="d-frame-item">
         <div class="d-frame-label">Problem</div>
-        <div class="d-frame-value">Digital communication alone won't drive adoption — desire problem identified</div>
+        <div class="d-frame-value">Digital communication alone would not drive adoption. The resistance was behavioural, not only technical.</div>
       </div>
       <div class="d-frame-item">
-        <div class="d-frame-label">Method</div>
-        <div class="d-frame-value">Multi-channel: comms, intranet, SharePoint hub, physical roadshow over 2 weeks</div>
+        <div class="d-frame-label">Options</div>
+        <div class="d-frame-value">Rely on standard comms or build a multi-channel rollout including an in-person roadshow.</div>
       </div>
       <div class="d-frame-item">
-        <div class="d-frame-label">Roadshow</div>
-        <div class="d-frame-value">Banners, flyers, values spinning wheel (team idea), cards to SharePoint hub</div>
+        <div class="d-frame-label">Decision</div>
+        <div class="d-frame-value">Use comms, intranet, SharePoint, and a two-week physical roadshow with clear signposting to the product.</div>
       </div>
       <div class="d-frame-item outcome-frame">
         <div class="d-frame-label">Outcome</div>
-        <div class="d-frame-value">95–98% appraisal usage uplift in roadshow week — system data, not a survey</div>
+        <div class="d-frame-value">95–98% appraisal usage uplift in roadshow week, measured through system data.</div>
       </div>
     </div>
     <div class="d-narrative">
-      <p>The rollout was a team effort — coordinated across the L&D team with named owners for each channel. The roadshow was planned collaboratively, with team members empowered to bring their own ideas. The spinning wheel tied to organisational values came from a colleague — that kind of distributed creative ownership is what made the roadshow feel human rather than corporate.</p>
-      <p>The Director of Pharmacy pushed back — her team was navigating too much change at once. What moved her wasn't a feature list. It was peer evidence: colleagues across the organisation describing the new process as easier and faster than paper. <strong>Peer experience is more convincing than any pitch.</strong></p>
+      <p>The rollout was a team effort with named owners across the L&amp;D team. The roadshow was planned collaboratively, and colleagues brought ideas that made the experience feel human rather than corporate.</p>
+      <p>The Director of Pharmacy pushed back because her team was already carrying too much change. What moved her was not a feature list. It was peer evidence from colleagues who said the new process was easier and faster than paper.</p>
     </div>
   </div>
 
-  <!-- D6 + D7 side by side -->
   <div class="two-col" style="margin-top: 0;">
     <div class="decision-card" style="margin-bottom: 0;">
       <div class="decision-header">
         <div class="d-num">Decision 06</div>
         <div class="d-title">Permission Architecture</div>
       </div>
+      <div class="d-framework">
+        <div class="d-frame-item">
+          <div class="d-frame-label">Problem</div>
+          <div class="d-frame-value">The inherited systems had too many people creating content with no shared standards.</div>
+        </div>
+        <div class="d-frame-item">
+          <div class="d-frame-label">Options</div>
+          <div class="d-frame-value">Start open and tighten later, or start restricted and open deliberately over time.</div>
+        </div>
+        <div class="d-frame-item">
+          <div class="d-frame-label">Decision</div>
+          <div class="d-frame-value">Design access restrictively from day one with gradual expansion.</div>
+        </div>
+        <div class="d-frame-item outcome-frame">
+          <div class="d-frame-label">Outcome</div>
+          <div class="d-frame-value">Governance failures from the legacy estate were not reproduced on the new platform.</div>
+        </div>
+      </div>
       <div class="d-narrative">
-        <p>Access designed restrictively from day one — not to gatekeep, but because I had seen what happens when nobody does. Gradual expansion is ongoing. <strong>Governance by design is not bureaucracy. It is the difference between a platform that stays coherent and one that becomes ungovernable.</strong></p>
+        <p>The trade-off was slower access expansion in the short term. It was accepted because coherence was more valuable than speed at this stage.</p>
       </div>
     </div>
+
     <div class="decision-card" style="margin-bottom: 0;">
       <div class="decision-header">
         <div class="d-num">Decision 07</div>
         <div class="d-title">Community Teams</div>
       </div>
-      <div class="d-narrative">
-        <p>Community nurses and AHPs operate outside the main compound — physically and culturally separate. Standard rollout wouldn't land. We went to them: in-person, bespoke, on their site. Gradual but measurable increase in appraisal completions followed. <strong>User segmentation is the practical recognition that different people need different things.</strong></p>
+      <div class="d-framework">
+        <div class="d-frame-item">
+          <div class="d-frame-label">Problem</div>
+          <div class="d-frame-value">Community nurses and AHPs operated outside the main site both physically and culturally.</div>
+        </div>
+        <div class="d-frame-item">
+          <div class="d-frame-label">Options</div>
+          <div class="d-frame-value">Run a standard central rollout or go to those teams in person with a bespoke approach.</div>
+        </div>
+        <div class="d-frame-item">
+          <div class="d-frame-label">Decision</div>
+          <div class="d-frame-value">Go to them directly — on site, in person, and with materials tailored to their context.</div>
+        </div>
+        <div class="d-frame-item outcome-frame">
+          <div class="d-frame-label">Outcome</div>
+          <div class="d-frame-value">Gradual but measurable growth in appraisal completions among groups a standard rollout would have missed.</div>
+        </div>
       </div>
+      <div class="d-narrative">
+        <p>The trade-off was a slower and more manual rollout. It was accepted because user segmentation only matters if it changes what you do.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="technical-decision">
+  <div class="section-label">
+    <div class="section-num">04b</div>
+    <div class="section-title-text">Technical Decision Deep Dive</div>
+    <div class="section-subtitle-text">ESR assignment logic as a product decision, not just a configuration choice</div>
+  </div>
+
+  <div class="artefact-block">
+    <div class="artefact-header">
+      <div class="artefact-tag">Decision Log · DL-05</div>
+      <div class="artefact-title">ESR Training Assignment — Role-Based vs Attribute-Based Design</div>
+    </div>
+    <div class="artefact-body">
+      <div class="artefact-section-title">The Problem</div>
+      <p class="artefact-text">The LMS supplier raised a concern about using ESR Position Number as the primary mechanism for assigning mandatory training. Internal stakeholders favoured position number as the simplest and most familiar key — already used for Position Learning Needs in ESR. This created a genuine architectural conflict: two reasonable positions pulling in opposite directions, with real operational consequences either way.</p>
+
+      <div class="artefact-section-title">The Options</div>
+      <div class="decision-entry">
+        <div class="de-header">Option 01 — Position Number Only</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">Approach</div><div class="de-cell-value">Use position number as the sole assignment key across all training types.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Benefit</div><div class="de-cell-value">Simple to configure. Familiar to internal stakeholders. Already used in ESR for Position Learning Needs.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Risk</div><div class="de-cell-value">New positions do not inherit rules. Restructures require bulk remapping. Audit trail is weak.</div></div>
+        </div>
+      </div>
+      <div class="decision-entry">
+        <div class="de-header">Option 02 — ESR Attributes Only</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">Approach</div><div class="de-cell-value">Use Job Role, Staff Group, and Area of Work as the primary assignment keys.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Benefit</div><div class="de-cell-value">Scales and survives reorganisation. Fewer than 20 staff groups make the rules maintainable.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Risk</div><div class="de-cell-value">Loses administrative simplicity where training need is genuinely uniform across occupants.</div></div>
+        </div>
+      </div>
+      <div class="decision-entry">
+        <div class="de-header">Option 03 — Hybrid Model</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">Approach</div><div class="de-cell-value">Use each mechanism where it performs best — position number for generic mandatory training, ESR attributes for specialist training, and position number as an overlay for exceptions.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Benefit</div><div class="de-cell-value">Administrative simplicity where risk is low, with better compliance accuracy where role variation matters.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Risk</div><div class="de-cell-value">More complex initial configuration and a governance requirement about which rule type applies where.</div></div>
+        </div>
+      </div>
+
+      <div class="artefact-section-title">Testing the Assumption</div>
+      <p class="artefact-text">Rather than resolve the debate in theory, a live mandatory training export was pulled to test a concrete question — do positions with multiple occupants actually have different training needs in practice? One position identified had multiple staff attached, including a secondment. On inspection, all occupants held the same role on the same ward and had no secondment-sensitive training differences in that case.</p>
+      <div class="callout">The real test is not "does one position have multiple people" — it is "do any of those people need different training." That distinction turned a binary disagreement into a scoped, evidence-based design decision.</div>
+
+      <div class="artefact-section-title">The Decision — Hybrid Model</div>
+      <div class="decision-entry">
+        <div class="de-header">Generic Mandatory and Statutory Training</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">Primary Key</div><div class="de-cell-value">Position Number</div></div>
+          <div class="de-cell"><div class="de-cell-label">Rationale</div><div class="de-cell-value">Training need is uniform across occupants. This is the simplest model to maintain at scale.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Outcome</div><div class="de-cell-value">Lower maintenance overhead and no bulk remapping for restructures.</div></div>
+        </div>
+      </div>
+      <div class="decision-entry">
+        <div class="de-header">Competency-Based, Specialist and Professional Registration Training</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">Primary Key</div><div class="de-cell-value">Job Role · Staff Group · Area of Work</div></div>
+          <div class="de-cell"><div class="de-cell-label">Rationale</div><div class="de-cell-value">Occupants of the same position can have genuinely different needs. Attribute-based rules survive reorganisation better.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Outcome</div><div class="de-cell-value">Compliance accuracy is maintained where role variation matters.</div></div>
+        </div>
+      </div>
+      <div class="decision-entry">
+        <div class="de-header">Post-Specific Exceptions</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">Primary Key</div><div class="de-cell-value">Position Number as an overlay</div></div>
+          <div class="de-cell"><div class="de-cell-label">Rationale</div><div class="de-cell-value">Adds a targeted requirement without creating a parallel rule system.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Outcome</div><div class="de-cell-value">Post-specific needs are met without undermining the scalability of the core model.</div></div>
+        </div>
+      </div>
+
+      <div class="artefact-section-title">Stakeholder Communication</div>
+      <p class="artefact-text">The same decision was communicated differently to two audiences. To the supplier, it was framed technically with direct reference to the assignment mechanism. To internal management, it was translated into plain language: what the three concerns were, why they were valid, and what we were doing about each one. One recommendation. Two calibrated explanations.</p>
+
+      <div class="artefact-section-title">Trade-Off</div>
+      <div class="de-tradeoff" style="padding: 12px 14px; margin-top: 8px;">What we accepted: more complexity up front and a requirement for clearer governance. What we avoided: either a maintenance problem at scale or compliance gaps in specialist training.</div>
+
+      <div class="artefact-section-title">Success Signal</div>
+      <div class="ac-item"><span class="ac-check">→</span>Training assignments remain accurate for staff in complex positions, including secondments and restructures.</div>
+      <div class="ac-item"><span class="ac-check">→</span>No bulk remapping is required when new positions are created for generic mandatory training.</div>
+      <div class="ac-item"><span class="ac-check">→</span>The audit trail is meaningful — assignments can be explained by role and staff group, not only by position number.</div>
+      <div class="ac-item"><span class="ac-check">→</span>The supplier confirms the hybrid model is technically feasible within the current ESR integration architecture.</div>
     </div>
   </div>
 </div>
@@ -228,9 +346,9 @@
 </div>
 
 <nav class="page-nav" aria-label="Page navigation">
-  <a href="journey.html" class="page-nav-link">← Journey</a>
-  <span class="page-nav-title">03 · Decisions</span>
-  <a href="outcomes.html" class="page-nav-link">Outcomes →</a>
+  <a href="strategy.html" class="page-nav-link">← Strategy</a>
+  <span class="page-nav-title">04 · Product Decisions</span>
+  <a href="discovery.html" class="page-nav-link">Discovery →</a>
 </nav>
 
 <script src="script.js"></script>

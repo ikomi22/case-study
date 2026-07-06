@@ -13,13 +13,13 @@
   <div class="top-nav-inner">
     <a href="index.html" class="top-nav-brand">CS·01</a>
     <div class="top-nav-links">
-      <a href="index.html">Home</a>
-      <a href="context.html">01 · Context</a>
-      <a href="journey.html">02 · Journey</a>
-      <a href="decisions.html">03 · Decisions</a>
-      <a href="outcomes.html">04 · Outcomes</a>
-      <a href="reflection.html">05 · Reflection</a>
-      <a href="vision.html">06 · Vision</a>
+      <a href="index.html">01 · Overview</a>
+      <a href="context.html">02 · Context</a>
+      <a href="strategy.html">03 · Strategy</a>
+      <a href="decisions.html">04 · Decisions</a>
+      <a href="discovery.html">05 · Discovery</a>
+      <a href="outcomes.html">06 · Outcomes</a>
+      <a href="reflection.html">07 · Reflection</a>
     </div>
   </div>
 </nav>
@@ -29,19 +29,19 @@
 </div>
 
 <div class="document">
-<!-- SECTION 01: CONTEXT -->
+
 <div class="section" id="context">
   <div class="section-label">
-    <div class="section-num">01</div>
+    <div class="section-num">02</div>
     <div class="section-title-text">Context</div>
-    <div class="section-subtitle-text">The inheritance · Jan 2025</div>
+    <div class="section-subtitle-text">The inherited environment this product had to work inside</div>
   </div>
 
   <div class="context-layout">
     <div class="context-narrative">
-      <p>This case study relates to a large acute NHS Trust — one of the UK's largest — serving nearly 20,000 staff across a complex multi-site environment. Learning and compliance aren't optional here. They are regulatory requirements with direct implications for patient safety.</p>
-      <p>When I joined in January 2025, the situation was uncomfortable from day one. The Trust had two systems running simultaneously — a legacy LMS and ESR, the NHS's national electronic staff record system. The legacy LMS had been rushed into production to support an EPR go-live. The people who configured it had already left. What they left behind was broken, poorly trusted, and generating genuine anxiety about the organisation's ability to demonstrate staff compliance.</p>
-      <p>There was no runway. No handover. No documentation that could be trusted. Just a requirements list — and a system that couldn't deliver any of it. That list became the starting point for a structured programme workplan — priorities assigned, owners named, milestones agreed. The vision was mapped before the work began.</p>
+      <p>This case study relates to a large acute NHS Trust — one of the UK's largest — serving nearly 20,000 staff across a complex multi-site environment. Learning, appraisal, and competency evidence are not optional here. They sit inside regulation, workforce assurance, and patient safety.</p>
+      <p>When I joined in January 2025, the Trust had two systems running simultaneously — a legacy LMS and ESR, the NHS's national electronic staff record system. The legacy LMS had been rushed into production to support an EPR go-live. The people who configured it had already left. What remained was a system that was broken, poorly trusted, and generating real anxiety about whether the organisation could evidence compliance properly.</p>
+      <p>There was no clean handover. There was a requirements list, a system that could not meet it, and a team at risk of looking incompetent because the platform around them was failing. That was the starting point.</p>
       <div class="pull-quote" style="margin-top: 16px;">
         <div class="pull-quote-text">I hadn't just inherited a technical problem. I had inherited a <span class="hl">trust problem.</span> And trust, once broken, doesn't respond to configuration changes.</div>
       </div>
@@ -63,7 +63,7 @@
           <div class="risk-card-title">Technology</div>
           <div class="risk-badge risk-high">Broken</div>
         </div>
-        <div class="risk-desc">Legacy LMS failed once already — SSO failures, broken completions, misconfigured courses, dirty data. Accounts created for rooms. Names not updating after marriage.</div>
+        <div class="risk-desc">Legacy LMS failed once already — SSO failures, broken completions, misconfigured courses, dirty data, fake accounts, and room accounts where people should have been.</div>
       </div>
 
       <div class="risk-card">
@@ -71,7 +71,7 @@
           <div class="risk-card-title">Governance</div>
           <div class="risk-badge risk-med">At Risk</div>
         </div>
-        <div class="risk-desc">ESR: too many hands, no naming conventions. Search required pasting ampersand strings to find a course. No accountability. Edge cases unresolved.</div>
+        <div class="risk-desc">ESR had too many hands and no naming conventions. Search was broken enough that exact strings had to be pasted in to find the right course.</div>
       </div>
 
       <div class="risk-card">
@@ -79,48 +79,46 @@
           <div class="risk-card-title">Trust</div>
           <div class="risk-badge risk-high">Depleted</div>
         </div>
-        <div class="risk-desc">L&D team at risk of being seen as incompetent. Staff had lost confidence in digital learning tools.</div>
+        <div class="risk-desc">Staff had lost confidence in digital learning tools, and the L&amp;D team was carrying the visible consequences.</div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- SECTION: WHAT I FOUND -->
-<div class="section" id="what-i-found">
+<div class="section section-alt" id="what-i-found">
   <div class="section-label">
-    <div class="section-num">01b</div>
+    <div class="section-num">02b</div>
     <div class="section-title-text">What I Found</div>
-    <div class="section-subtitle-text">Three layers · And the people navigating them</div>
+    <div class="section-subtitle-text">Technology, governance, and enterprise constraints</div>
   </div>
 
-  <div class="sub-title">The Technology</div>
-  <p class="prose">The legacy LMS was worse than I had been briefed. The home page was cluttered and unintuitive. Courses weren't marking as complete — in a compliance-driven NHS environment, that isn't a minor inconvenience, it's a governance failure. Staff who had changed their names through marriage found their records hadn't updated. There were fake accounts. There were accounts created for rooms rather than people. The data was dirty in ways that had accumulated over a long time with no one owning the clean-up.</p>
-  <p class="prose">ESR was its own challenge. Too many people had been given the ability to create courses with no naming conventions enforced. The result was a search experience so broken that if you wanted a user to find a specific course, you had to give them an exact string of text to paste into the search bar — including ampersand symbols before and after key terms just to surface the right result. That is not a learning system. That is a filing cabinet that nobody organised.</p>
+  <div class="sub-title">Technology and Data</div>
+  <p class="prose">The legacy LMS was worse than I had been briefed. The home page was cluttered and unintuitive. Courses weren't marking as complete — in a compliance-driven NHS environment, that is a governance failure, not a small UX annoyance. Staff who had changed their names through marriage found their records had not updated. The data had become dirty in ways that had accumulated over time because no one had owned the clean-up properly.</p>
+  <p class="prose">ESR was its own challenge. Too many people had been given the ability to create courses with no naming conventions enforced. The result was a search experience so broken that staff had to paste exact strings — including ampersands — to find the right learning. That is not a discoverable learning system. It is a filing cabinet nobody organised.</p>
 
-  <div class="sub-title">The Governance</div>
-  <p class="prose">The root cause of much of the technology problem was a governance one. Too many people had too much access and no shared standards. Course creation had been decentralised without any framework to ensure consistency. What felt like flexibility had become fragility — everyone could add to the system, nobody was accountable for what it looked like as a whole.</p>
+  <div class="sub-title">Governance and Constraint</div>
+  <p class="prose">The root cause of much of the technology problem was governance. Too many people had too much access and no shared standards. What had been treated as flexibility had become fragility.</p>
+  <p class="prose">ESR also imposed a hard enterprise constraint. It is the spine of NHS workforce administration and it is not going anywhere. Salaries, annual leave, employment records, and personal data all sit there. This product had to work with ESR rather than imagine a world without it.</p>
 
   <div class="callout">My first week I looked at the full picture and thought — can I actually do this? That's the honest answer. It was fear. Not paralysis — but the kind of fear that comes from understanding the scale of what's broken and feeling the weight of responsibility for fixing it.</div>
-
 </div>
 
-<!-- SECTION 02: STAKEHOLDER LANDSCAPE -->
-<div class="section section-alt" id="stakeholders">
+<div class="section" id="stakeholders">
   <div class="section-label">
-    <div class="section-num">02</div>
+    <div class="section-num">02c</div>
     <div class="section-title-text">Stakeholder Landscape</div>
-    <div class="section-subtitle-text">Influence matrix</div>
+    <div class="section-subtitle-text">Who helped, who hesitated, and where the friction sat</div>
   </div>
 
   <div class="stakeholder-matrix">
     <div class="sh-col sh-supportive">
       <div class="sh-header">✓ Supportive</div>
       <div class="sh-item">
-        <div class="sh-role">Head of L&D</div>
+        <div class="sh-role">Head of L&amp;D</div>
         <div class="sh-note">Understood the scale of the problem. Clear mandate provided. Key decision-making ally throughout.</div>
       </div>
       <div class="sh-item">
-        <div class="sh-role">Assistant Head of L&D (Line Manager)</div>
+        <div class="sh-role">Assistant Head of L&amp;D (Line Manager)</div>
         <div class="sh-note">Direct support. Flagged community teams early. Gave strategic direction on roadshow and rollout.</div>
       </div>
     </div>
@@ -128,22 +126,22 @@
       <div class="sh-header">⚠ Anxious</div>
       <div class="sh-item">
         <div class="sh-role">ICT Team</div>
-        <div class="sh-note">Had own pressures and systems to protect. Required patient relationship building before meaningful technical collaboration.</div>
+        <div class="sh-note">Had their own pressures and systems to protect. Required patient relationship-building before technical collaboration became productive.</div>
       </div>
       <div class="sh-item">
         <div class="sh-role">Director of Pharmacy</div>
-        <div class="sh-note">Team navigating multiple simultaneous changes. Pushed back on appraisal rollout timing. Convinced through peer evidence, not features.</div>
+        <div class="sh-note">Her team was already navigating multiple changes. Pushback was about timing and change load, not simply resistance to the product.</div>
       </div>
     </div>
     <div class="sh-col sh-obstructive">
       <div class="sh-header">✗ Friction</div>
       <div class="sh-item">
         <div class="sh-role">Information Governance</div>
-        <div class="sh-note">Caution by default — entirely appropriate in NHS context. Late engagement created avoidable delays. Lesson: IG should be a design input, not a sign-off gate.</div>
+        <div class="sh-note">Caution by default — entirely appropriate in this setting. Late engagement created avoidable delays and became a lasting lesson.</div>
       </div>
       <div class="sh-item">
         <div class="sh-role">Decentralised Departments</div>
-        <div class="sh-note">Continued creating courses on ESR without awareness of the new LMS. Not malicious — structural. Required communication, not criticism.</div>
+        <div class="sh-note">Continued creating courses on ESR without awareness of the new LMS. The issue was structural, not malicious. It required communication, not criticism.</div>
       </div>
     </div>
   </div>
@@ -152,9 +150,9 @@
 </div>
 
 <nav class="page-nav" aria-label="Page navigation">
-  <a href="index.html" class="page-nav-link">← Home</a>
-  <span class="page-nav-title">01 · Context</span>
-  <a href="journey.html" class="page-nav-link">Journey →</a>
+  <a href="index.html" class="page-nav-link">← Overview</a>
+  <span class="page-nav-title">02 · Context</span>
+  <a href="strategy.html" class="page-nav-link">Strategy →</a>
 </nav>
 
 <script src="script.js"></script>

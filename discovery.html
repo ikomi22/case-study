@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discovery — CS·01</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="top-nav" aria-label="Document navigation">
+  <div class="top-nav-inner">
+    <a href="index.html" class="top-nav-brand">CS·01</a>
+    <div class="top-nav-links">
+      <a href="index.html">01 · Overview</a>
+      <a href="context.html">02 · Context</a>
+      <a href="strategy.html">03 · Strategy</a>
+      <a href="decisions.html">04 · Decisions</a>
+      <a href="discovery.html">05 · Discovery</a>
+      <a href="outcomes.html">06 · Outcomes</a>
+      <a href="reflection.html">07 · Reflection</a>
+    </div>
+  </div>
+</nav>
+
+<div class="reading-progress" aria-hidden="true">
+  <div class="reading-progress-fill"></div>
+</div>
+
+<div class="document">
+
+<div class="section" id="discovery">
+  <div class="section-label">
+    <div class="section-num">05</div>
+    <div class="section-title-text">Discovery</div>
+    <div class="section-subtitle-text">Live product work, uncertainty, and how assumptions changed</div>
+  </div>
+
+  <div class="context-layout">
+    <div class="context-narrative">
+      <p>The discovery approach changed over time. In the appraisal workstream, users were not involved early enough. Later workstreams were deliberately handled differently: earlier conversations, clearer unknowns, fewer assumptions hidden as certainty, and a stronger link between discovery and the next decision.</p>
+      <p>Before a single element of the appraisal was configured on the LMS, I met with the People Promise Manager who owned the previous process. She described a Word document that broke when staff typed into it. That conversation shaped the digital design and prompted an interim fix to reduce pain while the replacement was being built.</p>
+      <p>The artefacts on this page are working documents rather than retrospective reconstruction. They show the product thinking as it happened, including what was still unknown.</p>
+    </div>
+
+    <div class="system-snapshot">
+      <div class="snapshot-title">Discovery Principles</div>
+      <div class="risk-card">
+        <div class="risk-card-header">
+          <div class="risk-card-title">Users First</div>
+          <div class="risk-badge risk-low">Rule</div>
+        </div>
+        <div class="risk-desc">No configuration decisions before speaking to the people affected where that conversation had not happened already.</div>
+      </div>
+      <div class="risk-card">
+        <div class="risk-card-header">
+          <div class="risk-card-title">Unknowns Visible</div>
+          <div class="risk-badge risk-med">Rule</div>
+        </div>
+        <div class="risk-desc">What we did not know was documented openly rather than disguised as confidence.</div>
+      </div>
+      <div class="risk-card">
+        <div class="risk-card-header">
+          <div class="risk-card-title">Pilot Small</div>
+          <div class="risk-badge risk-low">Rule</div>
+        </div>
+        <div class="risk-desc">Start with one competency or one workflow where necessary, validate it, then scale from evidence.</div>
+      </div>
+      <div class="risk-card">
+        <div class="risk-card-header">
+          <div class="risk-card-title">Iterate Publicly</div>
+          <div class="risk-badge risk-med">Rule</div>
+        </div>
+        <div class="risk-desc">Feedback, changes, and unresolved tensions stay visible so the product does not become a fiction of perfect foresight.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section section-alt" id="artefacts">
+  <div class="section-label">
+    <div class="section-num">05b</div>
+    <div class="section-title-text">Product Artefacts</div>
+    <div class="section-subtitle-text">Problem statements, personas, user stories, acceptance criteria, and success metrics</div>
+  </div>
+
+  <div class="artefact-block">
+    <div class="artefact-header">
+      <div class="artefact-tag">Workstream 01</div>
+      <div class="artefact-title">Staff Awards Nomination System</div>
+    </div>
+    <div class="artefact-body">
+      <div class="artefact-section-title">Problem Statement</div>
+      <p class="artefact-text">Staff recognition nominations were submitted as free text through a third-party platform, creating significant administrative burden. The People Support team ran daily ESR reports, manually cross-referenced each nomination to identify nominees and nominators, unpicked name errors, and compiled findings into a master spreadsheet. Identifying teams was particularly problematic. Supporting staff employed by third-party contracted employers had no clear nomination pathway despite being longstanding members of the organisation and contributing financially to the awards. With over 2,300 nominations in the last cycle, this process was unsustainable.</p>
+
+      <div class="artefact-section-title">User Personas</div>
+      <div class="persona-grid">
+        <div class="persona-card">
+          <div class="persona-role">The Nominator</div>
+          <div class="persona-item">
+            <div class="persona-item-label">Goal</div>
+            <div class="persona-item-value">Recognise a colleague or team quickly and confidently</div>
+          </div>
+          <div class="persona-item">
+            <div class="persona-item-label">Frustration</div>
+            <div class="persona-item-value">Typing names from memory, no confirmation received, unclear how to nominate contracted staff</div>
+          </div>
+          <div class="persona-item">
+            <div class="persona-item-label">Success</div>
+            <div class="persona-item-value">Finds the right person by searching, submits in under two minutes, receives immediate confirmation</div>
+          </div>
+        </div>
+        <div class="persona-card">
+          <div class="persona-role">The Administrator</div>
+          <div class="persona-item">
+            <div class="persona-item-label">Goal</div>
+            <div class="persona-item-value">Process nominations accurately without daily manual unpicking</div>
+          </div>
+          <div class="persona-item">
+            <div class="persona-item-label">Frustration</div>
+            <div class="persona-item-value">Daily ESR cross-referencing, spreadsheet management, name errors requiring correction, teams impossible to identify</div>
+          </div>
+          <div class="persona-item">
+            <div class="persona-item-label">Success</div>
+            <div class="persona-item-value">Verified nominations arrive from the system. Daily report is generated automatically. Manual spreadsheet work is eliminated.</div>
+          </div>
+        </div>
+        <div class="persona-card">
+          <div class="persona-role">The Nominee</div>
+          <div class="persona-item">
+            <div class="persona-item-label">Goal</div>
+            <div class="persona-item-value">Know they have been recognised and feel appreciated</div>
+          </div>
+          <div class="persona-item">
+            <div class="persona-item-label">Frustration</div>
+            <div class="persona-item-value">Currently finds out informally or not at all until the awards ceremony</div>
+          </div>
+          <div class="persona-item">
+            <div class="persona-item-label">Success</div>
+            <div class="persona-item-value">Receives email confirmation when nominated — recognition is felt immediately, not only at the ceremony</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="artefact-section-title">User Stories</div>
+      <div class="user-story">As an internal staff member, I want to search for and select a colleague or team from the system so that I do not need to remember exact names or spellings.</div>
+      <div class="user-story">As an internal staff member, I want to receive confirmation after submitting a nomination so that I know it was received.</div>
+      <div class="user-story">As an administrator, I want nominations to arrive with verified employee names and team data so that I do not have to manually cross-reference ESR reports daily.</div>
+      <div class="user-story">As an administrator, I want to generate daily nomination reports from the system so that I can present findings without building manual spreadsheets.</div>
+      <div class="user-story">As a nominee, I want to receive an email when I am nominated so that I feel recognised before the awards ceremony.</div>
+
+      <div class="artefact-section-title">Acceptance Criteria</div>
+      <div class="ac-item"><span class="ac-check">✓</span>Internal staff can search and select a colleague or team by name from Active Directory or LMS — no free text name entry.</div>
+      <div class="ac-item"><span class="ac-check">✓</span>Nominator receives email confirmation immediately after submission.</div>
+      <div class="ac-item"><span class="ac-check">✓</span>Nominee receives email notification when nominated.</div>
+      <div class="ac-item"><span class="ac-check">✓</span>Introduction page clearly explains how to nominate contracted support staff via the external system.</div>
+      <div class="ac-item"><span class="ac-check">✓</span>Teams can be nominated via LMS accounts bulk uploaded from the mandatory training department list.</div>
+      <div class="ac-item"><span class="ac-check">✓</span>Administrator can generate daily nomination reports from the system.</div>
+      <div class="ac-item"><span class="ac-check">✓</span>External staff nomination pathway remains functional and is communicated clearly on the introduction page.</div>
+
+      <div class="artefact-section-title">Decision Log</div>
+      <div class="decision-entry">
+        <div class="de-header">Decision 01 — Team Nominations</div>
+        <div class="de-grid">
+          <div class="de-cell">
+            <div class="de-cell-label">Options</div>
+            <div class="de-cell-value">Remove team nominations entirely, or create dummy LMS accounts representing teams.</div>
+          </div>
+          <div class="de-cell">
+            <div class="de-cell-label">Decision</div>
+            <div class="de-cell-value">Create dummy accounts for teams using a bulk upload from the mandatory training department list.</div>
+          </div>
+          <div class="de-cell">
+            <div class="de-cell-label">Why</div>
+            <div class="de-cell-value">Teams are a significant nomination category. Removing the option would reduce the value of the system.</div>
+          </div>
+        </div>
+        <div class="de-tradeoff">Trade-off: introduces dummy accounts into the LMS. Accepted because the value of team recognition outweighed the compromise.</div>
+      </div>
+
+      <div class="decision-entry">
+        <div class="de-header">Decision 02 — LMS vs External System</div>
+        <div class="de-grid">
+          <div class="de-cell">
+            <div class="de-cell-label">Options</div>
+            <div class="de-cell-value">Keep everything in the third-party platform, or move internal nominations into LMS.</div>
+          </div>
+          <div class="de-cell">
+            <div class="de-cell-label">Decision</div>
+            <div class="de-cell-value">Move internal nominations into LMS using the Active Directory connection. External contracted staff continue on the previous route.</div>
+          </div>
+          <div class="de-cell">
+            <div class="de-cell-label">Why</div>
+            <div class="de-cell-value">The Active Directory connection eliminates free text name entry and manual ESR cross-referencing, which was the core problem.</div>
+          </div>
+        </div>
+        <div class="de-tradeoff">Trade-off: creates a split process — internal through LMS, external through the previous system. Managed through clear communication.</div>
+      </div>
+
+      <div class="decision-entry">
+        <div class="de-header">Decision 03 — Annual vs Monthly Recognition Sequencing</div>
+        <div class="de-grid">
+          <div class="de-cell">
+            <div class="de-cell-label">Options</div>
+            <div class="de-cell-value">Run annual awards and monthly recognition at the same time, or sequence them.</div>
+          </div>
+          <div class="de-cell">
+            <div class="de-cell-label">Decision</div>
+            <div class="de-cell-value">Run annual awards first, then repurpose the form for monthly recognition afterwards.</div>
+          </div>
+          <div class="de-cell">
+            <div class="de-cell-label">Why</div>
+            <div class="de-cell-value">System limitations made simultaneous forms a poor experience.</div>
+          </div>
+        </div>
+        <div class="de-tradeoff">Trade-off: monthly recognition launches later than originally intended. Accepted to protect quality of experience.</div>
+      </div>
+
+      <div class="decision-entry">
+        <div class="de-header">Decision 04 — Individual vs Group Nominations</div>
+        <div class="de-grid">
+          <div class="de-cell">
+            <div class="de-cell-label">Options</div>
+            <div class="de-cell-value">Allow one submission for multiple people, or keep nominations individual.</div>
+          </div>
+          <div class="de-cell">
+            <div class="de-cell-label">Decision</div>
+            <div class="de-cell-value">One person or one team per submission.</div>
+          </div>
+          <div class="de-cell">
+            <div class="de-cell-label">Why</div>
+            <div class="de-cell-value">The system could not support multi-person nominations cleanly without compromising data quality.</div>
+          </div>
+        </div>
+        <div class="de-tradeoff">Trade-off: more effort for staff nominating several people. Mitigated by making each individual nomination quick and simple.</div>
+      </div>
+
+      <div class="artefact-section-title">Success Metrics</div>
+      <div class="ac-item"><span class="ac-check">→</span>Reduction in daily admin time processing nominations — baseline from the previous cycle.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Reduction in nomination errors — target: zero name verification errors for internal staff.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Number of nominations submitted — target: match or exceed 2,300 from the previous cycle.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Staff feedback on ease of use — post-cycle survey.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Nominee notification rate — all internal nominees receive email confirmation.</div>
+    </div>
+  </div>
+
+  <div class="artefact-block">
+    <div class="artefact-header">
+      <div class="artefact-tag">Workstream 02 · In Progress</div>
+      <div class="artefact-title">Nursing Competency Framework</div>
+    </div>
+    <div class="artefact-body">
+      <div class="artefact-section-title">Problem Statement</div>
+      <p class="artefact-text">Nursing competency requirements are currently fragmented across multiple systems and documents with no single source of truth. Nurses cannot see their full compliance picture in one place. Ward managers cannot report on team competency status meaningfully. The L&amp;D team cannot evidence organisational compliance at scale. This creates risk in a regulated clinical environment where competency evidence is directly linked to patient safety.</p>
+
+      <div class="artefact-section-title">Discovery Approach</div>
+      <p class="artefact-text">Unlike the appraisal workstream — where users were not involved early enough — the nursing framework is being approached differently. Discovery conversations with nursing leads are being conducted before any configuration begins. The pilot starts with a single competency to validate the approach before expanding. This is a deliberate application of the lesson learned from the appraisal rollout.</p>
+      <div class="callout">Starting with one competency is not a limitation — it is a product decision. Validate the approach with real users before scaling. The appraisal experience proved why this matters.</div>
+
+      <div class="artefact-section-title">User Personas — Draft</div>
+      <div class="persona-grid">
+        <div class="persona-card">
+          <div class="persona-role">The Nurse</div>
+          <div class="persona-item">
+            <div class="persona-item-label">Goal</div>
+            <div class="persona-item-value">Know what competencies are required and evidence completion in one accessible place.</div>
+          </div>
+          <div class="persona-item">
+            <div class="persona-item-label">Current frustration</div>
+            <div class="persona-item-value">Requirements are scattered across multiple documents and systems with no single view.</div>
+          </div>
+        </div>
+        <div class="persona-card">
+          <div class="persona-role">The Ward Manager</div>
+          <div class="persona-item">
+            <div class="persona-item-label">Goal</div>
+            <div class="persona-item-value">See team compliance status at a glance and act on gaps before they become risks.</div>
+          </div>
+          <div class="persona-item">
+            <div class="persona-item-label">Current frustration</div>
+            <div class="persona-item-value">No unified reporting means the compliance picture has to be compiled manually from multiple sources.</div>
+          </div>
+        </div>
+        <div class="persona-card">
+          <div class="persona-role">The Nursing Lead</div>
+          <div class="persona-item">
+            <div class="persona-item-label">Goal</div>
+            <div class="persona-item-value">Evidence organisational nursing competency compliance to regulators and leadership.</div>
+          </div>
+          <div class="persona-item">
+            <div class="persona-item-label">Current frustration</div>
+            <div class="persona-item-value">Fragmented data makes compliance reporting time-consuming and unreliable.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="artefact-section-title">Status</div>
+      <div class="ac-item"><span class="ac-check">✓</span>Problem statement defined.</div>
+      <div class="ac-item"><span class="ac-check">✓</span>User personas drafted — to be validated with nursing leads.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Discovery conversations with nursing leads — in progress.</div>
+      <div class="ac-item"><span class="ac-check">→</span>User stories — pending discovery completion.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Acceptance criteria — pending user story completion.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Single competency pilot — pending discovery sign-off.</div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="discovery-log">
+  <div class="section-label">
+    <div class="section-num">05c</div>
+    <div class="section-title-text">Discovery Log</div>
+    <div class="section-subtitle-text">Sessions, unknowns, tensions, and user testing in progress</div>
+  </div>
+
+  <p class="prose">The following sessions document discovery work in progress. No build decisions had been made from these sessions at the point they were recorded. They are included here because the uncertainty matters.</p>
+
+  <div class="artefact-block">
+    <div class="artefact-header">
+      <div class="artefact-tag">Discovery · Session 01</div>
+      <div class="artefact-title">AHP Development Framework — Initial Discovery</div>
+    </div>
+    <div class="artefact-body">
+      <div class="artefact-section-title">Context</div>
+      <p class="artefact-text">Allied Health Professionals represent approximately 12 staff groups within the Trust. AHP staff are required to revalidate with the Health and Care Professions Council every two years. There is a national AHP framework structured around four pillars — clinical, education, leadership, and research. This session was the first conversation with the AHP Lead before any wider stakeholder involvement.</p>
+
+      <div class="artefact-section-title">The Problem — In Her Words</div>
+      <p class="artefact-text">Graduates with defined career pathways want to progress but there is no infrastructure within the Trust to support that progression. Evidence for revalidation is currently kept informally in personal drives. There is no single place that shows what is expected of an AHP at their particular stage of development. There is no visible connection between the Trust's AHP staff and the national framework.</p>
+
+      <div class="artefact-section-title">What Success Looks Like</div>
+      <div class="ac-item"><span class="ac-check">→</span>Any staff member at any career stage can see what is expected at their current level.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Someone wanting to progress can identify exactly what they need to do next.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Teams can see the structure they need to create development plans for staff.</div>
+      <div class="ac-item"><span class="ac-check">→</span>The LMS can accept PDF uploads for HCPC revalidation evidence storage.</div>
+
+      <div class="artefact-section-title">What We Don't Know Yet</div>
+      <div class="ac-item"><span class="ac-check">?</span>What the LMS can technically support — supplier conversation required before commitments.</div>
+      <div class="ac-item"><span class="ac-check">?</span>What the national AHP framework looks like in full and how it maps to the four pillars in practice.</div>
+      <div class="ac-item"><span class="ac-check">?</span>What end users actually need — a discovery call with AHP staff was still being arranged.</div>
+      <div class="ac-item"><span class="ac-check">?</span>Whether PDF upload is feasible within the current LMS configuration.</div>
+      <div class="ac-item"><span class="ac-check">?</span>What the blueprint from another NHS Trust looks like in detail.</div>
+
+      <div class="artefact-section-title">Next Steps</div>
+      <div class="ac-item"><span class="ac-check">→</span>Supplier meeting — understand what is technically possible before any design decision.</div>
+      <div class="ac-item"><span class="ac-check">→</span>End user discovery call — Michael to be included to set the tone.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Review the blueprint spreadsheet from another Trust.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Contact the other Trust's LMS specialist for implementation insights.</div>
+
+      <div class="callout">No configuration decisions will be made before end users have been consulted. The discovery call with AHP staff is a prerequisite to any supplier or build conversation.</div>
+    </div>
+  </div>
+
+  <div class="artefact-block">
+    <div class="artefact-header">
+      <div class="artefact-tag">Discovery · Session 02</div>
+      <div class="artefact-title">AHP Development Framework — Multi-Stakeholder Discovery</div>
+    </div>
+    <div class="artefact-body">
+      <div class="artefact-section-title">Context</div>
+      <p class="artefact-text">A broader group session with the AHP Lead and leads from multiple AHP workstreams. This session surfaced shared themes, genuine tensions, and a clearer picture of the priority need.</p>
+
+      <div class="artefact-section-title">What the Group Said</div>
+      <p class="artefact-text">The therapy lead shared an existing Word document that staff carry across multiple Trusts — a portable record of learning and development gaps. Multiple leads expressed a desire for one place combining appraisals, CPD, revalidation, career logging, and learning resources linked to the four pillars. Career progression visibility was a recurring theme — staff currently have to go to their manager to find out where they are and what they need to do next. The group was clear that course completion should not imply automatic career progression.</p>
+
+      <div class="artefact-section-title">Tensions Identified</div>
+      <div class="decision-entry">
+        <div class="de-header">Tension 01 — Scope</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">The ask</div><div class="de-cell-value">Appraisals, CPD, revalidation, career logging, and learning resources all in one place.</div></div>
+          <div class="de-cell"><div class="de-cell-label">The risk</div><div class="de-cell-value">Building too much too soon before proving value with a smaller scope.</div></div>
+          <div class="de-cell"><div class="de-cell-label">The principle</div><div class="de-cell-value">Start with the highest priority need, prove value, then expand.</div></div>
+        </div>
+      </div>
+      <div class="decision-entry">
+        <div class="de-header">Tension 02 — Duplication</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">The question</div><div class="de-cell-value">Does a competency framework duplicate the appraisal work already being done?</div></div>
+          <div class="de-cell"><div class="de-cell-label">The likely answer</div><div class="de-cell-value">Appraisals are a conversation; the framework is a development reference. They do not have to be the same thing.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Status</div><div class="de-cell-value">Unresolved — needs explicit agreement before any build decisions.</div></div>
+        </div>
+      </div>
+      <div class="decision-entry">
+        <div class="de-header">Tension 03 — Portable vs Platform</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">The signal</div><div class="de-cell-value">The therapy lead's Word document already works and travels across Trusts.</div></div>
+          <div class="de-cell"><div class="de-cell-label">The risk</div><div class="de-cell-value">Building a platform solution that is not meaningfully better than what already exists.</div></div>
+          <div class="de-cell"><div class="de-cell-label">The question</div><div class="de-cell-value">What does the LMS offer that a Word document cannot?</div></div>
+        </div>
+      </div>
+
+      <div class="artefact-section-title">The Priority — What They Said</div>
+      <div class="pull-quote" style="margin: 12px 0;">
+        <div class="pull-quote-text">A single place where a staff member can independently see where they are in their career, what they need to do next, and what learning they need to achieve to grow — without needing to ask their manager.</div>
+      </div>
+
+      <div class="artefact-section-title">What Success Looks Like — Emerging Picture</div>
+      <div class="ac-item"><span class="ac-check">→</span>Staff can independently look up their career position and next steps without asking their manager.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Managers can point staff to a structured reference for development planning.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Learning resources are visible and linked to the four pillars of practice.</div>
+      <div class="ac-item"><span class="ac-check">→</span>The solution sparks development conversations rather than replacing them.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Framing is clear — completing a course does not automatically mean career progression.</div>
+
+      <div class="artefact-section-title">Next Steps — Agreed</div>
+      <div class="ac-item"><span class="ac-check">→</span>Speak to the other Trust contact and understand their implementation.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Have a supplier conversation about what the LMS can technically support.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Run an end user survey with wider AHP staff input.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Return to the group with what is possible and what is not before any build decisions.</div>
+
+      <div class="callout">The priority is clear even if the scope is not. People do not know what is available — and when they find out, there is no structured way to act on it. That is the problem worth solving first.</div>
+    </div>
+  </div>
+
+  <div class="artefact-block">
+    <div class="artefact-header">
+      <div class="artefact-tag">User Testing · Session 01</div>
+      <div class="artefact-title">Nursing Competency Framework — First Iteration Review</div>
+    </div>
+    <div class="artefact-body">
+      <div class="artefact-section-title">Context</div>
+      <p class="artefact-text">First user testing session with nursing staff on the competency framework pilot. Unlike the appraisal rollout — where users were not involved until training — this workstream involved users from the pilot stage. This session is Build-Measure-Learn in practice.</p>
+
+      <div class="artefact-section-title">Feedback Received</div>
+      <div class="ac-item"><span class="ac-check">↻</span>Wording on certain buttons needed reviewing because the language did not feel natural or clear.</div>
+      <div class="ac-item"><span class="ac-check">↻</span>Positioning of certain sections needed adjustment because the layout did not match how users expected to navigate.</div>
+      <div class="ac-item"><span class="ac-check">↻</span>Structure of certain sections needed rethinking because the organisation of content did not match how nurses think about competency requirements.</div>
+
+      <div class="artefact-section-title">Decisions Made</div>
+      <div class="ac-item"><span class="ac-check">✓</span>Users will be kept involved and consulted on the next version before it goes live.</div>
+      <div class="ac-item"><span class="ac-check">✓</span>No changes will be made without going back to the user group first.</div>
+      <div class="ac-item"><span class="ac-check">✓</span>Specific wording, positioning, and structure changes will be scoped for iteration two.</div>
+
+      <div class="artefact-section-title">Next Steps</div>
+      <div class="ac-item"><span class="ac-check">→</span>Document specific changes needed from session feedback.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Share proposed changes with the nursing group before implementing.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Schedule an iteration-two review session.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Update acceptance criteria to reflect any new requirements surfaced.</div>
+
+      <div class="callout">This is what involving users before full rollout looks like in practice. The pilot surfaces real experience issues that would not have been visible otherwise.</div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<nav class="page-nav" aria-label="Page navigation">
+  <a href="decisions.html" class="page-nav-link">← Product Decisions</a>
+  <span class="page-nav-title">05 · Discovery</span>
+  <a href="outcomes.html" class="page-nav-link">Outcomes →</a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
