@@ -199,43 +199,90 @@
     <div class="section-subtitle-text">Value vs. effort — the reasoning behind the sequencing above, made explicit</div>
   </div>
 
-  <div class="matrix-block">
-    <p class="matrix-intro-note">The P1/P2/P3 priorities and workstream sequencing above were not called a "framework" as they were being made — they were judgement calls under regulatory and delivery pressure. Plotted retrospectively on value vs. effort, the same calls hold up, and the pattern becomes explicit: foundation work had to happen regardless of effort because the value of a working, governable platform was non-negotiable; everything else was sequenced by where effort was lowest for the value it unlocked. <strong>Value</strong> here means reduction in patient-safety or compliance risk, staff time saved, or organisational assurance gained. <strong>Effort</strong> means delivery complexity, stakeholder count, and enterprise dependency load (principally ESR).</p>
+  <div style="margin: 20px 0 28px;">
 
-    <div class="matrix-frame">
-      <div class="matrix-yaxis">
-        <div class="matrix-yaxis-text">Value — Low → High</div>
+    <p style="font-size: 12px; color: #2B6EA8; line-height: 1.7; margin-bottom: 20px; max-width: 640px;">The P1/P2/P3 priorities and workstream sequencing above were not called a "framework" as they were being made — they were judgement calls under regulatory and delivery pressure. Plotted retrospectively on value vs. effort, the same calls hold up, and the pattern becomes explicit: foundation work had to happen regardless of effort because the value of a working, governable platform was non-negotiable; everything else was sequenced by where effort was lowest for the value it unlocked. <strong style="color:#0B1F3A;">Value</strong> here means reduction in patient-safety or compliance risk, staff time saved, or organisational assurance gained. <strong style="color:#0B1F3A;">Effort</strong> means delivery complexity, stakeholder count, and enterprise dependency load (principally ESR).</p>
+
+    <div style="border: 1px solid #A8CCE8; overflow: hidden;">
+
+      <!-- Row labels -->
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 16px; background: #EBF4FB; border-bottom: 1px solid #A8CCE8;">
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: #6B9FC1;">↑ Value</span>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: #6B9FC1;">Effort →</span>
       </div>
-      <div class="matrix-quadrants">
-        <div class="matrix-q matrix-q-quickwin">
-          <div class="matrix-q-label">Quick Wins<span class="matrix-q-sub">High Value · Low Effort</span></div>
-          <div class="matrix-item">Staff Awards Nominations — Active Directory replaced free-text entry with verified data; contained scope, existing integration pattern.<span class="mi-status">Delivered · Live</span></div>
-          <div class="matrix-item">Monthly Recognition Programme — repurposes the annual awards form already built, sequenced after it to avoid a poor simultaneous-forms experience.<span class="mi-status">Planned</span></div>
+
+      <!-- Quadrant grid -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr;">
+
+        <!-- Quick Wins -->
+        <div style="padding: 18px; border-right: 1px solid #A8CCE8; border-bottom: 1px solid #A8CCE8; background: #FFFFFF;">
+          <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #009639; margin-bottom: 4px;">Quick Wins</div>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 8px; letter-spacing: 0.05em; color: #6B9FC1; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid #D4E8F7;">High Value · Low Effort</div>
+
+          <div style="background: #EBF4FB; border-left: 3px solid #009639; padding: 9px 11px; margin-bottom: 8px; font-size: 11.5px; color: #0D3B66; line-height: 1.5;">
+            <strong>Staff Awards Nominations</strong> — Active Directory replaced free-text entry with verified data; contained scope, existing integration pattern.
+            <span style="display:block; font-family:'IBM Plex Mono', monospace; font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; color: #6B9FC1; margin-top: 4px;">Delivered · Live</span>
+          </div>
+          <div style="background: #EBF4FB; border-left: 3px solid #009639; padding: 9px 11px; font-size: 11.5px; color: #0D3B66; line-height: 1.5;">
+            <strong>Monthly Recognition Programme</strong> — repurposes the annual awards form already built, sequenced after it to avoid a poor simultaneous-forms experience.
+            <span style="display:block; font-family:'IBM Plex Mono', monospace; font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; color: #6B9FC1; margin-top: 4px;">Planned</span>
+          </div>
         </div>
-        <div class="matrix-q matrix-q-strategic">
-          <div class="matrix-q-label">Strategic Bets<span class="matrix-q-sub">High Value · High Effort</span></div>
-          <div class="matrix-item">Digital Appraisals — 13,000+ staff, behavioural change at scale, justified a 12-month pilot given the size of the shift being asked of the organisation.<span class="mi-status">Delivered · Live</span></div>
-          <div class="matrix-item">Manager Reporting &amp; Visibility — critical path to the North Star metric; blocked on manager hierarchy data and DPIA dependencies, which is exactly why it is high-effort rather than a quick win.<span class="mi-status">In Progress</span></div>
-          <div class="matrix-item">Nursing Competency Framework — patient-safety and regulatory stakes are high; multi-stakeholder discovery and a single-competency pilot were the cost of doing it safely.<span class="mi-status">Pilot · Iteration Two Planned</span></div>
+
+        <!-- Strategic Bets -->
+        <div style="padding: 18px; border-bottom: 1px solid #A8CCE8; background: #FFFFFF;">
+          <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #003087; margin-bottom: 4px;">Strategic Bets</div>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 8px; letter-spacing: 0.05em; color: #6B9FC1; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid #D4E8F7;">High Value · High Effort</div>
+
+          <div style="background: #EBF4FB; border-left: 3px solid #003087; padding: 9px 11px; margin-bottom: 8px; font-size: 11.5px; color: #0D3B66; line-height: 1.5;">
+            <strong>Digital Appraisals</strong> — 13,000+ staff, behavioural change at scale, justified a 12-month pilot given the size of the shift being asked of the organisation.
+            <span style="display:block; font-family:'IBM Plex Mono', monospace; font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; color: #6B9FC1; margin-top: 4px;">Delivered · Live</span>
+          </div>
+          <div style="background: #EBF4FB; border-left: 3px solid #003087; padding: 9px 11px; margin-bottom: 8px; font-size: 11.5px; color: #0D3B66; line-height: 1.5;">
+            <strong>Manager Reporting &amp; Visibility</strong> — critical path to the North Star metric; blocked on manager hierarchy data and DPIA dependencies, which is exactly why it is high-effort rather than a quick win.
+            <span style="display:block; font-family:'IBM Plex Mono', monospace; font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; color: #6B9FC1; margin-top: 4px;">In Progress</span>
+          </div>
+          <div style="background: #EBF4FB; border-left: 3px solid #003087; padding: 9px 11px; font-size: 11.5px; color: #0D3B66; line-height: 1.5;">
+            <strong>Nursing Competency Framework</strong> — patient-safety and regulatory stakes are high; multi-stakeholder discovery and a single-competency pilot were the cost of doing it safely.
+            <span style="display:block; font-family:'IBM Plex Mono', monospace; font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; color: #6B9FC1; margin-top: 4px;">Pilot · Iteration Two Planned</span>
+          </div>
         </div>
-        <div class="matrix-q matrix-q-fillin">
-          <div class="matrix-q-label">Fill-ins<span class="matrix-q-sub">Lower Value · Low Effort</span></div>
-          <div class="matrix-item">New Starter Onboarding — genuinely useful but not urgent; effort is low once position number enrolment lands, so it waits on that dependency rather than competing for capacity now.<span class="mi-status">Scoped</span></div>
-          <div class="matrix-item">Voluntary Services Access — smaller user group, contained scope, no regulatory driver forcing sequencing.<span class="mi-status">Exploration</span></div>
+
+        <!-- Fill-ins -->
+        <div style="padding: 18px; border-right: 1px solid #A8CCE8; background: #FFFFFF;">
+          <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #2B6EA8; margin-bottom: 4px;">Fill-ins</div>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 8px; letter-spacing: 0.05em; color: #6B9FC1; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid #D4E8F7;">Lower Value · Low Effort</div>
+
+          <div style="background: #EBF4FB; border-left: 3px solid #6B9FC1; padding: 9px 11px; margin-bottom: 8px; font-size: 11.5px; color: #0D3B66; line-height: 1.5;">
+            <strong>New Starter Onboarding</strong> — genuinely useful but not urgent; effort is low once position number enrolment lands, so it waits on that dependency rather than competing for capacity now.
+            <span style="display:block; font-family:'IBM Plex Mono', monospace; font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; color: #6B9FC1; margin-top: 4px;">Scoped</span>
+          </div>
+          <div style="background: #EBF4FB; border-left: 3px solid #6B9FC1; padding: 9px 11px; font-size: 11.5px; color: #0D3B66; line-height: 1.5;">
+            <strong>Voluntary Services Access</strong> — smaller user group, contained scope, no regulatory driver forcing sequencing.
+            <span style="display:block; font-family:'IBM Plex Mono', monospace; font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; color: #6B9FC1; margin-top: 4px;">Exploration</span>
+          </div>
         </div>
-        <div class="matrix-q matrix-q-reconsider">
-          <div class="matrix-q-label">Sequence Later<span class="matrix-q-sub">Value Unproven · High Effort</span></div>
-          <div class="matrix-item">AHP Development Framework — real stakeholder demand, but scope (appraisals vs. CPD vs. career logging) and duplication against the appraisal workstream were unresolved tensions from discovery; effort is high until scope narrows.<span class="mi-status">Discovery · Scope Open</span></div>
-          <div class="matrix-item">ACP Portfolio — adjacent to the AHP framework with similar open questions; deliberately not started until the AHP scope decision sets a pattern to follow.<span class="mi-status">Discovery</span></div>
+
+        <!-- Sequence Later -->
+        <div style="padding: 18px; background: #FFFFFF;">
+          <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #DA291C; margin-bottom: 4px;">Sequence Later</div>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 8px; letter-spacing: 0.05em; color: #6B9FC1; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid #D4E8F7;">Value Unproven · High Effort</div>
+
+          <div style="background: #EBF4FB; border-left: 3px solid #DA291C; padding: 9px 11px; margin-bottom: 8px; font-size: 11.5px; color: #0D3B66; line-height: 1.5;">
+            <strong>AHP Development Framework</strong> — real stakeholder demand, but scope (appraisals vs. CPD vs. career logging) and duplication against the appraisal workstream were unresolved tensions from discovery; effort is high until scope narrows.
+            <span style="display:block; font-family:'IBM Plex Mono', monospace; font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; color: #6B9FC1; margin-top: 4px;">Discovery · Scope Open</span>
+          </div>
+          <div style="background: #EBF4FB; border-left: 3px solid #DA291C; padding: 9px 11px; font-size: 11.5px; color: #0D3B66; line-height: 1.5;">
+            <strong>ACP Portfolio</strong> — adjacent to the AHP framework with similar open questions; deliberately not started until the AHP scope decision sets a pattern to follow.
+            <span style="display:block; font-family:'IBM Plex Mono', monospace; font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; color: #6B9FC1; margin-top: 4px;">Discovery</span>
+          </div>
         </div>
-      </div>
-      <div class="matrix-xaxis">
-        <span>Effort — Low</span>
-        <span>Effort — High</span>
+
       </div>
     </div>
 
-    <div class="callout">This is a retrospective artefact, not a live scoring model — the underlying decisions were made through stakeholder conversation and risk judgement rather than a numeric RICE or MoSCoW score at the time. Naming the framework here is intended to make that reasoning legible to someone outside the work, not to claim a formal scoring process existed from day one.</div>
+    <div class="callout" style="margin-top: 16px;">This is a retrospective artefact, not a live scoring model — the underlying decisions were made through stakeholder conversation and risk judgement rather than a numeric RICE or MoSCoW score at the time. Naming the framework here is intended to make that reasoning legible to someone outside the work, not to claim a formal scoring process existed from day one.</div>
+
   </div>
 </div>
 
