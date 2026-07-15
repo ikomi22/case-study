@@ -236,12 +236,13 @@
         <div class="de-tradeoff">Trade-off: more effort for staff nominating several people. Mitigated by making each individual nomination quick and simple.</div>
       </div>
 
-      <div class="artefact-section-title">Success Metrics</div>
-      <div class="ac-item"><span class="ac-check">→</span>Reduction in daily admin time processing nominations — baseline from the previous cycle.</div>
-      <div class="ac-item"><span class="ac-check">→</span>Reduction in nomination errors — target: zero name verification errors for internal staff.</div>
-      <div class="ac-item"><span class="ac-check">→</span>Number of nominations submitted — target: match or exceed 2,300 from the previous cycle.</div>
-      <div class="ac-item"><span class="ac-check">→</span>Staff feedback on ease of use — post-cycle survey.</div>
+      <div class="artefact-section-title">Success Metrics — Results</div>
+      <div class="ac-item"><span class="ac-check">✓</span>Admin time processing nominations — reduced by an estimated couple of days a week during the cycle and a couple of weeks overall, against a previous baseline described as "practically a full-time role."</div>
+      <div class="ac-item"><span class="ac-check">✓</span>Nomination errors — manual name/pull-through correction fell from an estimated 60–70% of nominations to a small residual rate on LMS-submitted nominations.</div>
+      <div class="ac-item"><span class="ac-check">✓</span>Nominations submitted — approximately 1,700 received, with 1,328 (78%) via the LMS pathway, matching the scale of the previous cycle's 2,300+ while shifting most volume onto the verified route.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Staff feedback on ease of use — post-cycle survey still to run.</div>
       <div class="ac-item"><span class="ac-check">→</span>Nominee notification rate — all internal nominees receive email confirmation.</div>
+      <div class="callout">Source and caveat: these results come from a structured interview with the People Support team lead who processed nominations in both cycles. She was explicit that she could not verify how much time a colleague spent on the same process, so total team-wide admin savings are likely understated here rather than overstated.</div>
     </div>
   </div>
 
@@ -255,10 +256,15 @@
       <p class="artefact-text">Nursing competency requirements are currently fragmented across multiple systems and documents with no single source of truth. Nurses cannot see their full compliance picture in one place. Ward managers cannot report on team competency status meaningfully. The L&amp;D team cannot evidence organisational compliance at scale. This creates risk in a regulated clinical environment where competency evidence is directly linked to patient safety.</p>
 
       <div class="artefact-section-title">Discovery Approach</div>
-      <p class="artefact-text">Unlike the appraisal workstream — where users were not involved early enough — the nursing framework is being approached differently. Discovery conversations with nursing leads are being conducted before any configuration begins. The pilot starts with a single competency to validate the approach before expanding. This is a deliberate application of the lesson learned from the appraisal rollout.</p>
+      <p class="artefact-text">Unlike the appraisal workstream — where users were not involved early enough — the nursing framework is being approached differently. Discovery conversations with nursing leads were conducted before any wider configuration began. The pilot starts with a single competency to validate the approach before expanding. This is a deliberate application of the lesson learned from the appraisal rollout.</p>
       <div class="callout">Starting with one competency is not a limitation — it is a product decision. Validate the approach with real users before scaling. The appraisal experience proved why this matters.</div>
 
-      <div class="artefact-section-title">User Personas — Draft</div>
+      <div class="artefact-section-title">Product Insight — Assumption Challenged</div>
+      <p class="artefact-text">Initial discussions with stakeholders focused heavily on competency evidence storage — where paper and digital records should live. Discovery conversations with Nursing Education Leads revealed something different: the primary problem was not evidence upload itself, but the absence of a Trust-wide view of nursing competency. Evidence currently sits fragmented across paper records, local ward files, manager-held documents, and personal drives, with no single source of truth and no consistent reporting mechanism.</p>
+      <p class="artefact-text">The core need that emerged is visibility, governance, assurance, and reporting. Evidence capture remains an important supporting capability, but it is not the primary outcome nursing leads are seeking — a distinction that would not have surfaced without discovery happening before build decisions.</p>
+      <div class="callout">The assumption going in was "this is a storage problem." Discovery showed it is a visibility and governance problem, with storage as one supporting piece rather than the goal. That distinction changes what "done" looks like for this workstream.</div>
+
+      <div class="artefact-section-title">User Personas — Updated From Discovery</div>
       <div class="persona-grid">
         <div class="persona-card">
           <div class="persona-role">The Nurse</div>
@@ -268,7 +274,7 @@
           </div>
           <div class="persona-item">
             <div class="persona-item-label">Current frustration</div>
-            <div class="persona-item-value">Requirements are scattered across multiple documents and systems with no single view.</div>
+            <div class="persona-item-value">Evidence is scattered across paper records, ward files, manager-held documents, and personal drives — inaccessible when staff move roles or managers change.</div>
           </div>
         </div>
         <div class="persona-card">
@@ -279,7 +285,7 @@
           </div>
           <div class="persona-item">
             <div class="persona-item-label">Current frustration</div>
-            <div class="persona-item-value">No unified reporting means the compliance picture has to be compiled manually from multiple sources.</div>
+            <div class="persona-item-value">No single source of truth or Trust-wide view means limited visibility of team competency status and difficulty tracking compliance consistently.</div>
           </div>
         </div>
         <div class="persona-card">
@@ -290,18 +296,18 @@
           </div>
           <div class="persona-item">
             <div class="persona-item-label">Current frustration</div>
-            <div class="persona-item-value">Fragmented data makes compliance reporting time-consuming and unreliable.</div>
+            <div class="persona-item-value">No Trust-wide reporting capability or consistent mechanism, limiting organisational assurance and governance oversight.</div>
           </div>
         </div>
       </div>
 
       <div class="artefact-section-title">Status</div>
       <div class="ac-item"><span class="ac-check">✓</span>Problem statement defined.</div>
-      <div class="ac-item"><span class="ac-check">✓</span>User personas drafted — to be validated with nursing leads.</div>
-      <div class="ac-item"><span class="ac-check">→</span>Discovery conversations with nursing leads — in progress.</div>
-      <div class="ac-item"><span class="ac-check">→</span>User stories — pending discovery completion.</div>
+      <div class="ac-item"><span class="ac-check">✓</span>User personas drafted and updated following discovery conversations with nursing leads.</div>
+      <div class="ac-item"><span class="ac-check">✓</span>Discovery conversations with Nursing Education Leads — complete. Core need reframed from evidence storage to Trust-wide visibility, governance, and reporting.</div>
+      <div class="ac-item"><span class="ac-check">→</span>User stories — being drafted against the reframed problem.</div>
       <div class="ac-item"><span class="ac-check">→</span>Acceptance criteria — pending user story completion.</div>
-      <div class="ac-item"><span class="ac-check">→</span>Single competency pilot — pending discovery sign-off.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Single competency pilot — in progress, see Discovery Log.</div>
     </div>
   </div>
 </div>
@@ -407,6 +413,52 @@
       <div class="ac-item"><span class="ac-check">→</span>Return to the group with what is possible and what is not before any build decisions.</div>
 
       <div class="callout">The priority is clear even if the scope is not. People do not know what is available — and when they find out, there is no structured way to act on it. That is the problem worth solving first.</div>
+    </div>
+  </div>
+
+  <div class="artefact-block">
+    <div class="artefact-header">
+      <div class="artefact-tag">Discovery · Session 03</div>
+      <div class="artefact-title">Nursing Competency Framework — Nursing Education Leads Discovery</div>
+    </div>
+    <div class="artefact-body">
+      <div class="artefact-section-title">Context</div>
+      <p class="artefact-text">Discovery sessions with Nursing Education Leads were conducted to understand the underlying problem before wider implementation of the nursing competency workstream — applying the same before-build discipline used on the AHP framework rather than repeating the appraisal workstream's late user involvement.</p>
+
+      <div class="artefact-section-title">Current State</div>
+      <p class="artefact-text">Competency evidence is currently fragmented across paper records, local ward files, manager-held documents, and personal drives. There is no Trust-wide competency record or consistent reporting mechanism.</p>
+
+      <div class="artefact-section-title">Key Pain Points Identified</div>
+      <div class="ac-item"><span class="ac-check">✗</span>No single source of truth for nursing competency records.</div>
+      <div class="ac-item"><span class="ac-check">✗</span>Limited visibility for managers.</div>
+      <div class="ac-item"><span class="ac-check">✗</span>Difficulty tracking compliance consistently across services.</div>
+      <div class="ac-item"><span class="ac-check">✗</span>Evidence can become inaccessible when staff move roles or managers change.</div>
+      <div class="ac-item"><span class="ac-check">✗</span>Limited organisational assurance and governance oversight.</div>
+
+      <div class="artefact-section-title">The Reframe</div>
+      <p class="artefact-text">Initial discussions focused heavily on competency evidence storage. Discovery with nursing leads revealed the primary problem was not evidence upload itself, but the absence of a Trust-wide view of nursing competency. The core need is visibility, governance, assurance, and reporting — evidence capture is an important supporting capability, but not the primary outcome being sought.</p>
+      <div class="callout">This is the same discipline applied in the AHP workstream — surface the real need through conversation before assuming the shape of the solution. Here it produced a genuine reframe: from "where do we store evidence" to "how does the Trust see and govern competency at all."</div>
+
+      <div class="artefact-section-title">Expected Outcomes — For Nurses</div>
+      <div class="ac-item"><span class="ac-check">→</span>Clearer expectations around competence and development requirements.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Easier access to competency records.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Reduced reliance on paper-based processes.</div>
+
+      <div class="artefact-section-title">Expected Outcomes — For Managers</div>
+      <div class="ac-item"><span class="ac-check">→</span>Increased visibility of team competency status.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Improved development conversations.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Faster identification of competency gaps.</div>
+
+      <div class="artefact-section-title">Expected Outcomes — For Nursing Education Teams</div>
+      <div class="ac-item"><span class="ac-check">→</span>Trust-wide reporting capability.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Improved compliance visibility.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Stronger governance and assurance.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Reduced fragmentation of competency information.</div>
+
+      <div class="artefact-section-title">Next Steps</div>
+      <div class="ac-item"><span class="ac-check">→</span>Translate the reframed need — visibility, governance, assurance, reporting — into user stories and acceptance criteria.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Confirm reporting requirements with Nursing Education Leads before scoping the single-competency pilot build.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Feed findings into the iteration-two review already underway with pilot users.</div>
     </div>
   </div>
 
