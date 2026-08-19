@@ -260,8 +260,8 @@
 <div class="section" id="technical-decision">
   <div class="section-label">
     <div class="section-num">04b</div>
-    <div class="section-title-text">Technical Decision Deep Dive</div>
-    <div class="section-subtitle-text">ESR assignment logic as a product decision, not just a configuration choice</div>
+    <div class="section-title-text">Technical Decision Deep Dives</div>
+    <div class="section-subtitle-text">ESR and LMS assignment logic as product decisions, not just configuration choices</div>
   </div>
 
   <div class="artefact-block">
@@ -340,6 +340,87 @@
       <div class="ac-item"><span class="ac-check">→</span>No bulk remapping is required when new positions are created for generic mandatory training.</div>
       <div class="ac-item"><span class="ac-check">→</span>The audit trail is meaningful — assignments can be explained by role and staff group, not only by position number.</div>
       <div class="ac-item"><span class="ac-check">→</span>The supplier confirms the hybrid model is technically feasible within the current ESR integration architecture.</div>
+    </div>
+  </div>
+
+  <div class="artefact-block">
+    <div class="artefact-header">
+      <div class="artefact-tag">Decision Log · DL-06 · Validation Ongoing</div>
+      <div class="artefact-title">Learning Assignment Architecture — From Position-Based to Layered Rule-Based Design</div>
+    </div>
+    <div class="artefact-body">
+      <div class="artefact-section-title">The Question</div>
+      <p class="artefact-text">DL-05 resolved one specific conflict — position number versus attributes for mandatory training. The broader question behind it was still open: how should learning assignment be architected across the LMS as a whole? The starting assumption, carried over from how ESR itself models Position Learning Needs, was that assignment might need to happen at individual position level.</p>
+
+      <div class="artefact-section-title">Discovery</div>
+      <div class="decision-entry">
+        <div class="de-header">ESR Analysis</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">Reviewed</div><div class="de-cell-value">ESR competency requirements, workforce structures, existing assignment logic.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Finding</div><div class="de-cell-value">Learning requirements clustered around workforce characteristics rather than individual positions.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Implication</div><div class="de-cell-value">Position-level assignment was not well supported by the underlying data.</div></div>
+        </div>
+      </div>
+      <div class="decision-entry">
+        <div class="de-header">Learning Pathways Review</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">Reviewed</div><div class="de-cell-value">Clinical pathways, professional pathways, specialty requirements.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Finding</div><div class="de-cell-value">Requirements consistently aligned with staff group, role, and speciality rather than organisational position.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Implication</div><div class="de-cell-value">A second, independent source pointed to the same pattern.</div></div>
+        </div>
+      </div>
+      <div class="decision-entry">
+        <div class="de-header">LMS Analysis</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">Reviewed</div><div class="de-cell-value">Assignment data, completion data, existing learning behaviour.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Finding</div><div class="de-cell-value">Live learning behaviour reinforced the patterns seen in ESR and the pathways review.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Implication</div><div class="de-cell-value">Three independent sources — ESR, pathways, and live LMS data — converged on one conclusion.</div></div>
+        </div>
+      </div>
+
+      <div class="artefact-section-title">Models Explored</div>
+      <div class="decision-entry">
+        <div class="de-header">Model 01 — Position-Based Assignment</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">Approach</div><div class="de-cell-value">Assign learning directly to individual ESR positions, mirroring ESR's own Position Learning Needs mechanism.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Benefit</div><div class="de-cell-value">Simple to understand and familiar, since it echoes an existing ESR concept.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Risk</div><div class="de-cell-value">High maintenance and poor scalability — organisational changes generate LMS work, the same failure mode Option 01 was rejected for in DL-05.</div></div>
+        </div>
+      </div>
+      <div class="decision-entry">
+        <div class="de-header">Model 02 — Profile-Based Assignment</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">Approach</div><div class="de-cell-value">Build a fixed learning profile per professional group — Nurse, Doctor, Radiographer, and so on.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Benefit</div><div class="de-cell-value">Removes per-position configuration; partially viable as a simplification.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Risk</div><div class="de-cell-value">Profiles become increasingly fragmented over time and recreate the workforce complexity they were meant to abstract away.</div></div>
+        </div>
+      </div>
+      <div class="decision-entry">
+        <div class="de-header">Model 03 — Layered Rule-Based Assignment</div>
+        <div class="de-grid">
+          <div class="de-cell"><div class="de-cell-label">Approach</div><div class="de-cell-value">Layer rules — All Staff, plus Staff Group, plus Work Area, plus targeted Exceptions.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Benefit</div><div class="de-cell-value">Most accurately reflected workforce learning requirements across all three discovery datasets.</div></div>
+          <div class="de-cell"><div class="de-cell-label">Risk</div><div class="de-cell-value">Requires disciplined rule ownership across layers — the same governance discipline established in DL-05's hybrid model.</div></div>
+        </div>
+      </div>
+      <div class="callout">Model 03 was selected. It is, in effect, DL-05's hybrid model generalised — the same logic of a broad base rule with targeted overlays, applied as a standing architecture rather than a one-off resolution to a single conflict.</div>
+
+      <div class="artefact-section-title">Architecture Principle</div>
+      <p class="artefact-text">ESR is the Trust's workforce system of record. The LMS is the learning system of record. The two are related but distinct, and this discovery made that distinction an explicit design rule rather than an implicit assumption.</p>
+      <div class="callout">The LMS should not become a second ESR.</div>
+
+      <div class="artefact-section-title">Future-State Architecture</div>
+      <div class="ac-item"><span class="ac-check">→</span>Layer 1 — Learning Required for Everyone: the baseline mandatory and statutory training applied Trust-wide.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Layer 2 — Additional Learning by Staff Group: role-specific requirements layered on top of the baseline.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Layer 3 — Additional Learning by Work Area: specialty and ward-specific requirements layered further still.</div>
+      <div class="ac-item"><span class="ac-check">→</span>Layer 4 — Special Cases: targeted, post-specific exceptions added without creating a parallel rule system.</div>
+      <p class="artefact-text">For example, a Staff Nurse on a neonatal ward inherits Core Learning + Nursing Learning + Neonatal Learning. A Consultant in radiology inherits Core Learning + Medical Learning + Radiology Learning — the same layered logic, different composition by role and work area.</p>
+
+      <div class="artefact-section-title">Key Discovery</div>
+      <div class="callout">Learning requirements are primarily driven by who someone is professionally and where they work — not by individual ESR position. This is the strongest conclusion to come out of the discovery.</div>
+
+      <div class="artefact-section-title">Status</div>
+      <p class="artefact-text">Discovery is complete and the architecture is defined, consistent with the hybrid model already tested in DL-05. It has not yet been checked against live data at the same standard DL-05 was — no equivalent test has been run against Model 03 specifically. That validation is ongoing, and this entry will be updated once it concludes.</p>
     </div>
   </div>
 </div>
